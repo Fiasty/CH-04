@@ -1,0 +1,26 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+#back-to-top {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  font-size: 2rem;
+  background: #a8f600;
+  width: 4rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 999;
+}/*# sourceMappingURL=back-to-top.css.map */

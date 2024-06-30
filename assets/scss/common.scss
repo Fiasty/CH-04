@@ -1,0 +1,93 @@
+@import "main";
+
+//   ****************************************************************
+// ! 2 . common -- content ----------------------------------
+//   ***************************************************************
+
+// ! tag styles
+a,
+li {
+    font-family: $font-pop;
+    text-decoration: none;
+    color: $color-black;
+    list-style: none;
+}
+
+button:active {
+    border: none !important;
+    border-color: transparent !important;
+}
+
+// ! Common html class styles
+
+.relative {
+    position: relative;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;;
+}
+.text-uppercase {
+    text-transform: uppercase !important;;
+}
+.text-lowercase {
+    text-transform: lowercase !important;;
+}
+.text-dark {
+    color: $text-dark !important;
+}
+.text-white {
+    color: $color-white !important;
+}
+.text-neon {
+    color: $color-lemon !important;
+}
+.bg-white {
+    background: $color-white !important;
+}
+.bg-black {
+    background: $color-black !important;
+}
+.bg-neon {
+    background: $color-lemon !important;
+}
+.border-white {
+    border: 1px solid $color-white !important;
+}
+.font-pop {
+    font-family: $font-pop !important;
+}
+.font-acl {
+    font-family: $font-acl !important;
+}
+.radius-100{
+    border-radius: 100px !important;
+    -webkit-border-radius: 100px !important;
+    -moz-border-radius: 100px !important;
+    -ms-border-radius: 100px !important;
+    -o-border-radius: 100px !important;
+}
+.radius-round{
+    border-radius: 50%;;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.bg-to-white:hover {
+    background : $color-white !important;
+}
+.text-to-black:hover{
+    color : $text-dark !important;
+}
+
+
+
+
+
+// ! Custom/Variable Button styles
+
+// ? General button styles
+
+
+// ? Transparent btn styles

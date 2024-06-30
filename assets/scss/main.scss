@@ -1,0 +1,58 @@
+
+// SCSS Files list and record
+
+//   ****************************************************************
+//   *****************************************************************
+        //  ! 1 . main 
+        //  ! 2 . common 
+        //  ! 3 . responsive
+        //  ! 4 . header 
+        //  ! 5 . footer 
+        //  ! 6 . back-to-top 
+        //  ! 7 . home-style
+        //  ! 8 . animation
+//   *****************************************************************
+//   ****************************************************************
+
+
+
+
+//   *****************************************************************
+        // ! 1 . main -- content ------------------------------------
+//   ***************************************************************
+
+
+
+// Google Fonts family variables 
+$font-pop : "Poppins", sans-serif;
+$font-acl : "Aclonica", $font-pop;
+
+// Theme Color Variables 
+
+$color-lemon : #a8f600;
+$color-white : #ffffff;
+$text-dark  : #0a0c00;
+$color-black: #000000;
+$border-black: #000000;
+$border-dark : #0a0c0080;
+$border-light: #e9ecef;
+$border-gray : #adb5bd;
+
+
+
+// roots settings
+
+$root-font-size: 10px;
+
+html{
+        font-size: $root-font-size;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+}
+
+*, :after, :before{
+    box-sizing: border-box;
+    margin: 0;
+    letter-spacing: -.015em;
+}
+

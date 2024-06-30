@@ -1,0 +1,87 @@
+@import "main";
+
+//   ****************************************************************
+// ! 7 . home-style -- content ----------------------------------
+//   ***************************************************************
+
+.sec-hero {
+    padding: 12rem 0;
+    .hero-typography {
+        .hero-highlighted-text-wrap {
+            h1 {
+                font-size: 12rem;
+            }
+        }
+        p {
+            font-size: 1.8rem;
+        }
+        .hero-btns-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            align-items: center;
+            margin-top: 36px;
+            margin-bottom: 80px;
+            &:after {
+                content: "";
+                position: relative;
+                display: inline-block;
+                border-bottom: 1px solid $color-white;
+                width: 100%;
+                flex: 1 1;
+            }
+            a {
+                height: 5.2rem !important;
+                line-height: 5.2rem;
+                padding: 0 2rem !important;
+                font-size: 2rem;
+                transition: 0.4s all ease;
+                -webkit-transition: 0.4s all ease;
+                -moz-transition: 0.4s all ease;
+                -ms-transition: 0.4s all ease;
+                -o-transition: 0.4s all ease;
+                overflow: hidden;
+                
+                i {
+                    margin-right: 5px;
+                    font-size: 3rem;
+                    vertical-align: middle !important;
+                }
+                img {
+                    margin-right: 5px;
+                }
+            }
+        }
+        .hero-image-sec {
+            .hero-img-wrap {
+                img {
+                    filter: grayscale(1);
+                    -webkit-filter: grayscale(1);
+                }
+            }
+            .big-circle-btn {
+                position: absolute;
+                right: 60px;
+                top: 60px;
+                width: 15rem;
+                display: grid;
+                place-content: center;
+                aspect-ratio: 1;
+                overflow: hidden;
+                z-index: 1;
+                i {
+                    font-size: 8rem;
+                    z-index: 9;
+                    rotate: -45deg;
+                    font-weight: 600;
+                    transition: 0.4s all ease;
+                    -webkit-transition: 0.4s all ease;
+                    -moz-transition: 0.4s all ease;
+                    -ms-transition: 0.4s all ease;
+                    -o-transition: 0.4s all ease;
+}
+                
+            }
+        }
+    }
+}
