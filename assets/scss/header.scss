@@ -1,0 +1,62 @@
+@import "main";
+
+//   ****************************************************************
+// ! 4 . header -- content ----------------------------------
+//   ***************************************************************
+.sticky-header {
+        position: sticky;
+        top: 0;
+        .navbar-nav {
+                .nav-item {
+                        margin-right: 20px;
+                }
+                .nav-link {
+                        padding: 48px 0px;
+                        font-size: 1.6rem;
+                        color: $color-white;
+                        font-family: $font-acl !important;
+                        &:hover {
+                                color: $color-lemon;
+                        }
+                        &.active {
+                                color: $color-lemon;
+                        }
+                }
+                
+        }
+        .sidebar-btn {
+                cursor: pointer;
+                width: 60px;
+                position: relative;
+                display: inline-block;
+                background: $color-lemon;
+                aspect-ratio: 1 !important;
+                border-radius: 50%;
+                padding: 20px;
+                overflow: hidden !important;
+
+                .line {
+                        display: block;
+                        background: $color-black;
+                        width: 20px;
+                        height: 2.5px !important;
+                        margin: 4px 0;
+                        transition: 0.2s all linear;
+                        -webkit-transition: 0.2s all linear;
+                        -moz-transition: 0.2s all linear;
+                        -ms-transition: 0.2s all linear;
+                        -o-transition: 0.2s all linear;
+                }
+                .line:nth-child(2n) {                        
+                        margin: auto;
+                        height: 2.5px !important;
+                }
+                &:hover .line.line:nth-child(2n) {
+                        width: 15px;
+                }
+                &:hover .line {
+                        width: 24px;
+                        margin: 4px auto;
+                }
+        }
+}

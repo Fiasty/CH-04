@@ -1,0 +1,83 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+.sec-hero {
+  padding: 12rem 0;
+}
+.sec-hero .hero-typography .hero-highlighted-text-wrap h1 {
+  font-size: 12rem;
+}
+.sec-hero .hero-typography p {
+  font-size: 1.8rem;
+}
+.sec-hero .hero-typography .hero-btns-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  margin-top: 36px;
+  margin-bottom: 80px;
+}
+.sec-hero .hero-typography .hero-btns-wrap:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px solid #ffffff;
+  width: 100%;
+  flex: 1 1;
+}
+.sec-hero .hero-typography .hero-btns-wrap a {
+  height: 5.2rem !important;
+  line-height: 5.2rem;
+  padding: 0 2rem !important;
+  font-size: 2rem;
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+  overflow: hidden;
+}
+.sec-hero .hero-typography .hero-btns-wrap a i {
+  margin-right: 5px;
+  font-size: 3rem;
+  vertical-align: middle !important;
+}
+.sec-hero .hero-typography .hero-btns-wrap a img {
+  margin-right: 5px;
+}
+.sec-hero .hero-typography .hero-image-sec .hero-img-wrap img {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+.sec-hero .hero-typography .hero-image-sec .big-circle-btn {
+  position: absolute;
+  right: 60px;
+  top: 60px;
+  width: 15rem;
+  display: grid;
+  place-content: center;
+  aspect-ratio: 1;
+  overflow: hidden;
+  z-index: 1;
+}
+.sec-hero .hero-typography .hero-image-sec .big-circle-btn i {
+  font-size: 8rem;
+  z-index: 9;
+  rotate: -45deg;
+  font-weight: 600;
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+}/*# sourceMappingURL=home-style.css.map */

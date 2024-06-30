@@ -1,0 +1,22 @@
+@import "main";
+
+//   ****************************************************************
+//   ! 6 . back-to-top  -- content ----------------------------------
+//   ***************************************************************
+
+
+#back-to-top {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    font-size: 2rem;
+    background: $color-lemon;
+    width: 4rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 999;
+}

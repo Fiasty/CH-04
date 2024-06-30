@@ -1,0 +1,100 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+a,
+li {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #000000;
+  list-style: none;
+}
+
+button:active {
+  border: none !important;
+  border-color: transparent !important;
+}
+
+.relative {
+  position: relative;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-dark {
+  color: #0a0c00 !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-neon {
+  color: #a8f600 !important;
+}
+
+.bg-white {
+  background: #ffffff !important;
+}
+
+.bg-black {
+  background: #000000 !important;
+}
+
+.bg-neon {
+  background: #a8f600 !important;
+}
+
+.border-white {
+  border: 1px solid #ffffff !important;
+}
+
+.font-pop {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.font-acl {
+  font-family: "Aclonica", "Poppins", sans-serif !important;
+}
+
+.radius-100 {
+  border-radius: 100px !important;
+  -webkit-border-radius: 100px !important;
+  -moz-border-radius: 100px !important;
+  -ms-border-radius: 100px !important;
+  -o-border-radius: 100px !important;
+}
+
+.radius-round {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.bg-to-white:hover {
+  background: #ffffff !important;
+}
+
+.text-to-black:hover {
+  color: #0a0c00 !important;
+}/*# sourceMappingURL=common.css.map */
