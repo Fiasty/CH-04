@@ -6,6 +6,7 @@
 .sticky-header {
         position: sticky;
         top: 0;
+        z-index: 999 !important;
         .navbar-nav {
                 .nav-item {
                         margin-right: 20px;

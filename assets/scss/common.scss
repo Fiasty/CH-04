@@ -24,14 +24,18 @@ button:active {
     position: relative;
 }
 
+.section-padding {
+    padding: 4rem 0;
+}
+
 .text-uppercase {
-    text-transform: uppercase !important;;
+    text-transform: uppercase !important;
 }
 .text-uppercase {
-    text-transform: uppercase !important;;
+    text-transform: uppercase !important;
 }
 .text-lowercase {
-    text-transform: lowercase !important;;
+    text-transform: lowercase !important;
 }
 .text-dark {
     color: $text-dark !important;
@@ -39,7 +43,7 @@ button:active {
 .text-white {
     color: $color-white !important;
 }
-.text-neon {
+.text-lemon {
     color: $color-lemon !important;
 }
 .bg-white {
@@ -48,11 +52,14 @@ button:active {
 .bg-black {
     background: $color-black !important;
 }
-.bg-neon {
+.bg-lemon {
     background: $color-lemon !important;
 }
 .border-white {
     border: 1px solid $color-white !important;
+}
+.border-to-white:hover {
+    border-color: $color-white !important;
 }
 .font-pop {
     font-family: $font-pop !important;
@@ -60,34 +67,128 @@ button:active {
 .font-acl {
     font-family: $font-acl !important;
 }
-.radius-100{
+.radius-100 {
     border-radius: 100px !important;
     -webkit-border-radius: 100px !important;
     -moz-border-radius: 100px !important;
     -ms-border-radius: 100px !important;
     -o-border-radius: 100px !important;
 }
-.radius-round{
-    border-radius: 50%;;
+.radius-round {
+    border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
 .bg-to-white:hover {
-    background : $color-white !important;
+    background: $color-white !important;
+    transition: 0.4s all ease;
+    -webkit-transition: 0.4s all ease;
+    -moz-transition: 0.4s all ease;
+    -ms-transition: 0.4s all ease;
+    -o-transition: 0.4s all ease;
 }
-.text-to-black:hover{
-    color : $text-dark !important;
+.text-to-black:hover {
+    color: $text-dark !important;
 }
 
+.img-grayscale {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
 
-
-
+.section-title h2 {
+    font-size: 6rem !important;
+}
 
 // ! Custom/Variable Button styles
 
 // ? General button styles
+
+.link-btn {
+    font-size: 1.8rem;
+    color: $color-white !important;
+    position: relative;
+    padding-bottom: 1rem;
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+        background: $color-white;
+        height: 2px;
+        width: 90%;
+        transition: 0.4s all ease;
+        -webkit-transition: 0.4s all ease;
+        -moz-transition: 0.4s all ease;
+        -ms-transition: 0.4s all ease;
+        -o-transition: 0.4s all ease;
+}
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+        background: $color-white;
+        height: 2px;
+        width: 0%;
+        transition: 1.2s all ease;
+        -webkit-transition: 1.2s all ease;
+        -moz-transition: 1.2s all ease;
+        -ms-transition: 1.2s all ease;
+        -o-transition: 1.2s all ease;
+    }
+    &:hover:after {
+        width: 90%;
+    }
+    &:hover:before {
+        width: 0;
+    }
+
+    &:hover i {
+        rotate: 0deg;
+    }
+    i {
+        color: $color-lemon;
+        margin-left: 10px;
+        rotate: -45deg;
+        transition: 0.4s all ease;
+        -webkit-transition: 0.4s all ease;
+        -moz-transition: 0.4s all ease;
+        -ms-transition: 0.4s all ease;
+        -o-transition: 0.4s all ease;
+    }
+}
+
+
+// * big circle btn 
+
+
+.big-circle-btn {
+    z-index: 2;
+    overflow: hidden;
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    width: 15rem;
+    display: grid;
+    place-content: center;
+    aspect-ratio: 1;
+    overflow: hidden;
+    z-index: 1;
+    i {
+        font-size: 8rem;
+        z-index: 9;
+        rotate: -45deg;
+        font-weight: 600;
+        transition: 0.4s all ease;
+        -webkit-transition: 0.4s all ease;
+        -moz-transition: 0.4s all ease;
+        -ms-transition: 0.4s all ease;
+        -o-transition: 0.4s all ease;
+    }
+}
 
 
 // ? Transparent btn styles
