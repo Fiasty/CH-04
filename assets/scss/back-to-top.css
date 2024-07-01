@@ -1,12 +1,25 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 *, :after, :before {
   box-sizing: border-box;
   margin: 0;
   letter-spacing: -0.015em;
+}
+
+::-moz-selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
 }
 
 #back-to-top {
@@ -23,4 +36,16 @@ html {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   z-index: 999;
+}
+
+#back-to-top:after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 1;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0, transparent 80%);
 }/*# sourceMappingURL=back-to-top.css.map */

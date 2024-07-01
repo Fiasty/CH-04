@@ -3,7 +3,7 @@
 //   ****************************************************************
 // ! 7 . home-style -- content ----------------------------------
 //   ***************************************************************
-
+// * Home Hero section styles
 .sec-hero {
     padding: 12rem 0;
     .hero-typography {
@@ -41,7 +41,7 @@
                 -ms-transition: 0.4s all ease;
                 -o-transition: 0.4s all ease;
                 overflow: hidden;
-                
+
                 i {
                     margin-right: 5px;
                     font-size: 3rem;
@@ -52,36 +52,115 @@
                 }
             }
         }
-        .hero-image-sec {
-            .hero-img-wrap {
-                img {
-                    filter: grayscale(1);
-                    -webkit-filter: grayscale(1);
+        
+    }
+}
+
+// * Home demo design section styles
+
+.home-design-demo-wrap {
+    .design-demo-head-wrap {
+        flex-wrap: wrap;
+        gap: 30px 190px;
+        align-items: center;
+        padding-bottom: 11rem;
+        .design-demo-head-image-side {
+            .design-demo-head-image-wrap {
+                .design-demo-head-image-items {
+                    border: 4px solid $color-lemon;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    &:first-child {
+                        margin-right: -30px;
+                        z-index: 1;
+                    }
+                    &:last-child {
+                        z-index: 1;
+                        margin-left: -30px;
+                    }
+                    &:nth-child(2n) {
+                        z-index: 2;
+                    }
+                    img {
+                        width: 60px;
+                        aspect-ratio: 1;
+                        position: relative;
+                        filter: grayscale(1);
+                        -webkit-filter: grayscale(1);
+                        object-fit: cover;
+                    }
                 }
             }
-            .big-circle-btn {
-                position: absolute;
-                right: 60px;
-                top: 60px;
-                width: 15rem;
-                display: grid;
-                place-content: center;
-                aspect-ratio: 1;
-                overflow: hidden;
-                z-index: 1;
-                i {
-                    font-size: 8rem;
-                    z-index: 9;
-                    rotate: -45deg;
-                    font-weight: 600;
-                    transition: 0.4s all ease;
-                    -webkit-transition: 0.4s all ease;
-                    -moz-transition: 0.4s all ease;
-                    -ms-transition: 0.4s all ease;
-                    -o-transition: 0.4s all ease;
-}
-                
+            h5 {
+                font-size: 2rem;
+                margin-top: 10px;
             }
+        }
+        .design-demo-head-text-wrap {
+            max-width: 588px;
+            h4 {
+                font-size: 3rem;
+            }
+        }
+    }
+    .design-demo-one-half {
+        padding: 6rem 0;
+
+        .design-demo-one-half-img-wrap {
+            filter: drop-shadow(16px 16px $color-white);
+            -webkit-filter: drop-shadow(16px 16px $color-white);
+            img {
+                width: 520px;
+                height: 450px;
+                object-fit: contain;
+                filter: grayscale(1);
+                -webkit-filter: grayscale(1);
+            }
+        }
+        .design-demo-one-half-content-wrap {
+            p {
+                font-size: 1.8rem;
+                opacity: 0.8;
+                margin-top: 2.8rem;
+                margin-bottom: 4rem;
+                max-width: 588px;
+            }
+            .design-demo-btn-group {
+                display: flex;
+                gap: 8px;
+                .btn {
+                    padding: 10px 20px;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+            }
+            .design-demo-one-half-link-btn {
+                margin-top: 6rem;
+                display: flex;
+                justify-content: start;
+            }
+            .link-btn {
+                font-family: $font-acl;
+                display: flex;
+                justify-content: start;
+                align-items: flex-start;
+                i {
+                    margin-left: 25px;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+    .design-demo-circle-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .big-circle-btn {
+            position: relative;
+            font-size: 1.4rem;
         }
     }
 }

@@ -56,3 +56,10 @@ html{
     letter-spacing: -.015em;
 }
 
+
+::selection {
+        background: $color-lemon;
+        color: $color-white;
+        text-shadow: none
+    }
+    
