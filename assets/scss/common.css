@@ -35,12 +35,16 @@ button:active {
   border-color: transparent !important;
 }
 
+span {
+  color: #0a0c00;
+}
+
 .relative {
   position: relative;
 }
 
 .section-padding {
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .text-uppercase {
@@ -83,8 +87,16 @@ button:active {
   border: 1px solid #ffffff !important;
 }
 
+.border-black {
+  border: 1px solid #000000 !important;
+}
+
 .border-to-white:hover {
   border-color: #ffffff !important;
+}
+
+.border-to-lemon:hover {
+  border-color: #a8f600 !important;
 }
 
 .font-pop {
@@ -120,8 +132,21 @@ button:active {
   -o-transition: 0.4s all ease;
 }
 
+.bg-to-black:hover {
+  background: #000000 !important;
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+}
+
 .text-to-black:hover {
   color: #0a0c00 !important;
+}
+
+.text-to-white:hover {
+  color: #ffffff !important;
 }
 
 .img-grayscale {
@@ -135,7 +160,7 @@ button:active {
 
 .link-btn {
   font-size: 1.8rem;
-  color: #ffffff !important;
+  color: #ffffff;
   position: relative;
   padding-bottom: 1rem;
 }
@@ -185,6 +210,18 @@ button:active {
   -moz-transition: 0.4s all ease;
   -ms-transition: 0.4s all ease;
   -o-transition: 0.4s all ease;
+}
+
+.link-btn-black {
+  padding-bottom: 5px;
+}
+.link-btn-black:before {
+  background: #000000 !important;
+  height: 1px;
+}
+.link-btn-black:after {
+  background: #000000 !important;
+  height: 1px;
 }
 
 .big-circle-btn {

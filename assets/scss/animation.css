@@ -1,3 +1,27 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+::-moz-selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
 .animation_custom_right {
   animation: animation_custom_right 1.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s forwards;
   -webkit-animation: animation_custom_right 1.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s forwards;
@@ -107,4 +131,31 @@
 .btn-to-top-white-hover:hover:before {
   top: -40%;
   background: white;
+}
+
+.btn-to-top-lemon-hover:before {
+  content: "";
+  position: absolute;
+  transition-duration: 0.8s;
+  width: 200%;
+  height: 200%;
+  top: 100%;
+  left: 50%;
+  background: #a8f600 !important;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.btn-to-top-lemon-hover:hover:before {
+  top: -40%;
+  background: #a8f600 !important;
 }/*# sourceMappingURL=animation.css.map */

@@ -17,6 +17,9 @@ button:active {
     border: none !important;
     border-color: transparent !important;
 }
+span {
+    color: $text-dark;
+}
 
 // ! Common html class styles
 
@@ -25,7 +28,7 @@ button:active {
 }
 
 .section-padding {
-    padding: 4rem 0;
+    padding: 5rem 0;
 }
 
 .text-uppercase {
@@ -58,8 +61,14 @@ button:active {
 .border-white {
     border: 1px solid $color-white !important;
 }
+.border-black {
+    border: 1px solid $color-black !important;
+}
 .border-to-white:hover {
     border-color: $color-white !important;
+}
+.border-to-lemon:hover {
+    border-color: $color-lemon !important;
 }
 .font-pop {
     font-family: $font-pop !important;
@@ -89,8 +98,19 @@ button:active {
     -ms-transition: 0.4s all ease;
     -o-transition: 0.4s all ease;
 }
+.bg-to-black:hover {
+    background: $color-black !important;
+    transition: 0.4s all ease;
+    -webkit-transition: 0.4s all ease;
+    -moz-transition: 0.4s all ease;
+    -ms-transition: 0.4s all ease;
+    -o-transition: 0.4s all ease;
+}
 .text-to-black:hover {
     color: $text-dark !important;
+}
+.text-to-white:hover {
+    color: $color-white !important;
 }
 
 .img-grayscale {
@@ -108,7 +128,7 @@ button:active {
 
 .link-btn {
     font-size: 1.8rem;
-    color: $color-white !important;
+    color: $color-white;
     position: relative;
     padding-bottom: 1rem;
     &:before {
@@ -161,6 +181,18 @@ button:active {
     }
 }
 
+// black-color-link-btn 
+.link-btn-black {
+    padding-bottom: 5px;
+    &:before {
+        background: $color-black !important;
+        height: 1px;
+    }
+    &:after {
+        background: $color-black !important;
+        height: 1px;
+    }
+}
 
 // * big circle btn 
 
