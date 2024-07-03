@@ -152,3 +152,31 @@
     top: -40%;
     background: $color-lemon !important;
 }
+
+
+
+.btn-to-top-black-hover:before {
+    content: "";
+    position: absolute;
+    transition-duration: 0.8s;
+    width: 200%;
+    height: 200%;
+    top: 100%;
+    left: 50%;
+    background: $color-black !important;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: -1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.btn-to-top-black-hover:hover:before {
+    top: -40%;
+    background: $color-black !important;
+}

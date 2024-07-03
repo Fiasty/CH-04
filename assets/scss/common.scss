@@ -70,6 +70,10 @@ span {
 .border-to-lemon:hover {
     border-color: $color-lemon !important;
 }
+.border-x-dark {
+    border-left: 1px solid $border-dark;
+    border-right: 1px solid $border-dark;
+}
 .font-pop {
     font-family: $font-pop !important;
 }
@@ -111,6 +115,9 @@ span {
 }
 .text-to-white:hover {
     color: $color-white !important;
+}
+.text-to-lemon:hover {
+    color: $color-lemon !important;
 }
 
 .img-grayscale {

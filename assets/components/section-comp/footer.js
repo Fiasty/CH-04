@@ -64,7 +64,7 @@ fetch('index.html')
       </div>
 
       <div class="footer-back-to-top-comp text-center py-5">
-      <a href="#hero" class="btn font-acl text-white">Back to top <i class="fa fa-arrow-up"></i></a>  
+      <a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;" class="btn font-acl text-white">Back to top <i class="fa fa-arrow-up"></i></a>  
       </div>
 
 

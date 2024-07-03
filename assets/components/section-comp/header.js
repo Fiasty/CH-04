@@ -1,11 +1,12 @@
+// Get a reference to the element where the header will be inserted
 const pageHeader = document.getElementById('page-header');
 
+// Fetch the header content from header.html (adjust the path as needed)
 fetch('index.html')
   .then(response => response.text()) // Parse the response as text
   .then(htmlContent => {
-    pageHeader.innerHTML = 
-    // Header html content starts
-    `
+    // Append the fetched content to pageHeader
+    pageHeader.innerHTML = `
       <nav class="navbar navbar-expand-lg bg-black">
         <div class="container custom-container">
           <a class="navbar-brand" href="index.html">
@@ -27,7 +28,7 @@ fetch('index.html')
               <li class="nav-item">
                 <a
                   href="index.html"
-                  class="nav-link active"
+                  class="nav-link"
                   aria-current="page"
                 >
                   HOME
@@ -78,10 +79,30 @@ fetch('index.html')
           </div>
         </div>
       </nav>
-    `
-    // Header Html content ends 
+    `;
+
+    // Get the current page filename (e.g., index.html, about.html)
+    const path = window.location.pathname;
+    const page = path.split('/').pop();
+
+    // Select all navigation links inside the navbar
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Loop through each navigation link
+    navLinks.forEach(navLink => {
+      // Get the href attribute of the link
+      const href = navLink.getAttribute('href');
+
+      // Check if the link's href matches the current page or if the page is the root
+      if ((href === 'index.html' && (page === '' || page === 'index.html')) || (href === page && page !== '')) {
+        // Add the 'active' class to the link
+        navLink.classList.add('active');
+      } else {
+        // Make sure to remove 'active' class from all other navigation items
+        navLink.classList.remove('active');
+      }
+    });
   })
   .catch(error => {
     console.error('Error fetching header:', error);
   });
-  
