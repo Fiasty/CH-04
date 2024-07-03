@@ -1,0 +1,57 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+::-moz-selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.about-services-sec {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.about-services-sec .about-service-box {
+  max-width: 320px;
+}
+.about-services-sec .about-service-box:hover .about-counter-box-thumb img {
+  transform: scale(-1) rotate(180deg);
+  -webkit-transform: scale(-1) rotate(180deg);
+  -moz-transform: scale(-1) rotate(180deg);
+  -ms-transform: scale(-1) rotate(180deg);
+  -o-transform: scale(-1) rotate(180deg);
+}
+.about-services-sec .about-service-box h4 {
+  font-size: 2.4rem;
+}
+.about-services-sec .about-service-box p {
+  font-size: 1.6rem;
+}
+.about-services-sec .about-counter-box-thumb {
+  margin-bottom: 2rem;
+}
+.about-services-sec .about-counter-box-thumb img {
+  width: 45px;
+  aspect-ratio: 1;
+  transition: 0.4s all ease-in-out;
+  -webkit-transition: 0.4s all ease-in-out;
+  -moz-transition: 0.4s all ease-in-out;
+  -ms-transition: 0.4s all ease-in-out;
+  -o-transition: 0.4s all ease-in-out;
+}/*# sourceMappingURL=about.css.map */

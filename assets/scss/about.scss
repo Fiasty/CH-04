@@ -1,0 +1,47 @@
+@import "main";
+
+//   ****************************************************************
+// ! 10 . about -- content ----------------------------------
+//   ***************************************************************
+
+
+
+// ? Service (counter) section 
+
+.about-services-sec {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .about-service-box {
+        max-width: 320px;
+        &:hover {
+            .about-counter-box-thumb {
+                img {
+                    transform: scale(-1) rotate(180deg);
+                    -webkit-transform: scale(-1) rotate(180deg);
+                    -moz-transform: scale(-1) rotate(180deg);
+                    -ms-transform: scale(-1) rotate(180deg);
+                    -o-transform: scale(-1) rotate(180deg);
+                }
+            }
+        }
+        h4 {
+            font-size: 2.4rem;
+        }
+        p {
+            font-size: 1.6rem;
+        }
+    }
+    .about-counter-box-thumb {
+        margin-bottom: 2rem;
+        img {
+            width: 45px;
+            aspect-ratio: 1;
+            transition: 0.4s all ease-in-out;
+            -webkit-transition: 0.4s all ease-in-out;
+            -moz-transition: 0.4s all ease-in-out;
+            -ms-transition: 0.4s all ease-in-out;
+            -o-transition: 0.4s all ease-in-out;
+        }
+    }
+}

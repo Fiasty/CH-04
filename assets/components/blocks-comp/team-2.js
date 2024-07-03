@@ -140,6 +140,6 @@ fetch('index.html')
     // team-row-2 Html content ends 
   })
   .catch(error => {
-    console.error('Error fetching teamRow2:', error);
+    console.error('Error fetching team-row-2:', error);
   });
   
