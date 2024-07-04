@@ -1,0 +1,108 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+::-moz-selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.contact-get-in-touch-sec .get-in-touch-content-col {
+  display: flex;
+  flex-direction: column;
+}
+.contact-get-in-touch-sec .get-in-touch-content-col h2 {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+.contact-get-in-touch-sec .get-in-touch-content-col p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.contact-get-in-touch-sec .get-in-touch-content-col .get-in-touch-form-wrap .btn {
+  padding: 2.3rem 4rem 2.1rem;
+  overflow: hidden;
+  z-index: 1;
+  font-size: 1.6rem;
+}
+.contact-get-in-touch-sec .get-in-touch-content-col .get-in-touch-form-wrap label {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 13px;
+  margin-bottom: 0;
+}
+.contact-get-in-touch-sec .get-in-touch-content-col .get-in-touch-form-wrap label[for=massage] {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0 !important;
+  margin-bottom: 0;
+}
+.contact-get-in-touch-sec .get-in-touch-content-col .get-in-touch-form-wrap .form-control,
+.contact-get-in-touch-sec .get-in-touch-content-col .get-in-touch-form-wrap textarea {
+  height: 5rem;
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  padding-left: 3rem;
+  opacity: 1 !important;
+  z-index: 99;
+  color: black;
+  margin: 4rem 0;
+}
+.contact-get-in-touch-sec .get-in-touch-content-col .get-in-touch-form-wrap textarea {
+  height: 155px;
+  margin-top: 0;
+  padding-top: 0;
+}
+.contact-get-in-touch-sec .get-in-touch-content-col .get-in-touch-form-wrap textarea:focus-visible {
+  outline: none !important;
+}
+.contact-get-in-touch-sec .get-in-touch-content-col .get-in-touch-form-wrap input::-webkit-input-placeholder,
+.contact-get-in-touch-sec .get-in-touch-content-col .get-in-touch-form-wrap textarea::-webkit-input-placeholder,
+.contact-get-in-touch-sec .get-in-touch-content-col .get-in-touch-form-wrap input[type=text],
+.contact-get-in-touch-sec .get-in-touch-content-col .get-in-touch-form-wrap input[type=email],
+.contact-get-in-touch-sec .get-in-touch-content-col .get-in-touch-form-wrap textarea {
+  color: #000 !important;
+  opacity: 1;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.contact-get-in-touch-sec .get-in-touch-content-col .get-in-touch-form-wrap .form-control:focus,
+.contact-get-in-touch-sec .get-in-touch-content-col .get-in-touch-form-wrap text-area:focus-visible {
+  border-color: inherit;
+  box-shadow: none;
+  outline: none !important;
+}
+.contact-get-in-touch-sec .contact-get-in-touch-details .contact-info {
+  margin-bottom: 5rem;
+}
+.contact-get-in-touch-sec .contact-get-in-touch-details .contact-info h6 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.contact-get-in-touch-sec .contact-get-in-touch-details .contact-info h5 {
+  font-size: 2.4rem;
+}
+.contact-get-in-touch-sec .contact-get-in-touch-details .contact-info .link-btn {
+  margin-top: 5rem;
+}
+.contact-get-in-touch-sec .get-in-touch-content-col p {
+  font-size: 2.4rem;
+}/*# sourceMappingURL=contact.css.map */
