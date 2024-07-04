@@ -47,6 +47,10 @@ span {
   padding: 5rem 0;
 }
 
+.opa-half {
+  opacity: 0.5 !important;
+}
+
 .text-uppercase {
   text-transform: uppercase !important;
 }
