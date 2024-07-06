@@ -203,6 +203,78 @@ span {
     }
 }
 
+
+
+// grey-color-link-btn 
+.link-btn-grey {
+    padding-bottom: 5px;
+    &:before {
+        background: $border-gray !important;
+        height: 1px;
+    }
+    &:after {
+        background: $border-gray !important;
+        height: 1px;
+    }
+}
+
+
+.link-btn-grey {
+    font-size: 1.8rem;
+    color: $color-white;
+    position: relative;
+    padding-bottom: 1rem;
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: $color-white;
+        height: 2px;
+        width: 100%;
+        transition: 0.4s all ease;
+        -webkit-transition: 0.4s all ease;
+        -moz-transition: 0.4s all ease;
+        -ms-transition: 0.4s all ease;
+        -o-transition: 0.4s all ease;
+}
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: $color-white;
+        height: 2px;
+        width: 0%;
+        transition: 1.2s all ease;
+        -webkit-transition: 1.2s all ease;
+        -moz-transition: 1.2s all ease;
+        -ms-transition: 1.2s all ease;
+        -o-transition: 1.2s all ease;
+    }
+    &:hover:after {
+        width: 100%;
+    }
+    &:hover:before {
+        width: 0;
+    }
+
+    &:hover i {
+        rotate: 0deg;
+    }
+    i {
+        color: $color-lemon;
+        margin-left: 10px;
+        rotate: -45deg;
+        transition: 0.4s all ease;
+        -webkit-transition: 0.4s all ease;
+        -moz-transition: 0.4s all ease;
+        -ms-transition: 0.4s all ease;
+        -o-transition: 0.4s all ease;
+    }
+}
+
+
 // * big circle btn 
 
 

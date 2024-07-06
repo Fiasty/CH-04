@@ -1,0 +1,140 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+::-moz-selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.services-service-sec .service-box-col .wrap {
+  border: 1px solid black;
+  overflow: hidden !important;
+  margin: 1.5rem 0;
+  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+.services-service-sec .service-box-col .wrap:after {
+  content: "";
+  background: #0a0c00;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  z-index: 1;
+  transition: 0.4s;
+  margin: 16px 8px 16px 8px;
+}
+.services-service-sec .service-box-col .wrap img {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+  padding: 15px 8px 15px 9px;
+}
+.services-service-sec .service-box-col .wrap .service-box-details-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  padding: 4rem;
+  z-index: 2;
+  position: relative;
+}
+.services-service-sec .service-box-col .wrap h3 {
+  font-size: 3rem;
+  margin-bottom: 8rem;
+  z-index: 3;
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+}
+.services-service-sec .service-box-col .wrap h4 {
+  margin-bottom: 2.5rem;
+}
+.services-service-sec .service-box-col .wrap h4 a {
+  font-size: 2.4rem;
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+}
+.services-service-sec .service-box-col .wrap p {
+  font-size: 1.6rem;
+  margin-bottom: 6.7rem;
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+}
+.services-service-sec .service-box-col .wrap .service-link-btn {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.services-service-sec .service-box-col .wrap .service-link-btn i {
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+}
+.services-service-sec .service-box-col .wrap .service-link-btn:before {
+  background: grey !important;
+}
+.services-service-sec .service-box-col .wrap .service-link-btn:after {
+  background: grey !important;
+}
+
+.services-service-sec .service-box-col .wrap:hover:after {
+  content: "";
+  opacity: 0.9;
+}
+.services-service-sec .service-box-col .wrap:hover img {
+  position: absolute;
+  opacity: 1;
+}
+.services-service-sec .service-box-col .wrap:hover h3 {
+  color: #a8f600 !important;
+}
+.services-service-sec .service-box-col .wrap:hover h4 a {
+  color: #ffffff !important;
+}
+.services-service-sec .service-box-col .wrap:hover p {
+  color: #ffffff !important;
+}
+.services-service-sec .service-box-col .wrap:hover .service-link-btn {
+  color: #ffffff !important;
+}
+.services-service-sec .service-box-col .wrap:hover .service-link-btn i {
+  color: #a8f600 !important;
+}/*# sourceMappingURL=services.css.map */

@@ -237,6 +237,72 @@ span {
   height: 1px;
 }
 
+.link-btn-grey {
+  padding-bottom: 5px;
+}
+.link-btn-grey:before {
+  background: #adb5bd !important;
+  height: 1px;
+}
+.link-btn-grey:after {
+  background: #adb5bd !important;
+  height: 1px;
+}
+
+.link-btn-grey {
+  font-size: 1.8rem;
+  color: #ffffff;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.link-btn-grey:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #ffffff;
+  height: 2px;
+  width: 100%;
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+}
+.link-btn-grey:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #ffffff;
+  height: 2px;
+  width: 0%;
+  transition: 1.2s all ease;
+  -webkit-transition: 1.2s all ease;
+  -moz-transition: 1.2s all ease;
+  -ms-transition: 1.2s all ease;
+  -o-transition: 1.2s all ease;
+}
+.link-btn-grey:hover:after {
+  width: 100%;
+}
+.link-btn-grey:hover:before {
+  width: 0;
+}
+.link-btn-grey:hover i {
+  rotate: 0deg;
+}
+.link-btn-grey i {
+  color: #a8f600;
+  margin-left: 10px;
+  rotate: -45deg;
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+}
+
 .big-circle-btn {
   z-index: 2;
   overflow: hidden;
