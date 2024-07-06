@@ -50,14 +50,13 @@
     <link rel="stylesheet" href="assets/scss/brand-slider.css" />
     <link rel="stylesheet" href="assets/scss/get-in-touch.css" />
     <link rel="stylesheet" href="assets/scss/skill-bar.css" />
+    <link rel="stylesheet" href="assets/scss/accordion.css" />
 
     <link rel="stylesheet" href="assets/scss/home-style.css" />
     <link rel="stylesheet" href="assets/scss/responsive.css" />
     <link rel="stylesheet" href="assets/scss/common.css" />
     <link rel="stylesheet" href="assets/scss/main.css" />
 
-    <!-- page Specific css links  -->
-     <link rel="stylesheet" href="/assets/scss/about.css">
   </head>
 
   <body>
@@ -66,87 +65,20 @@
 
     <!-- ! Main content starts -->
     <main>
-      <!--  About us Services Section Starts  -->
 
-      <section class="section-padding about-services-sec bg-white">
-        <div class="container">
-          <div class="row py-5">
-            <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-around my-5">
-              <div class="about-service-box">
-                <div class="about-counter-box-thumb">
-                  <img src="/assets/images/svgs/service-icon-1.svg" alt="serviceImg" class="img-fluid">
-                </div>
-                <h4 class="about-counter-box-title text-black font-acl">
-                  <span class="design-award-count">26</span>+ Design Awards
-                </h4>
-                <br />
-                <p class="text-black font-pop">
-                  We are a creative agency brands building insightful strategy,
-                  creating unique designs helping
-                </p>
-              </div>
-            </div>
+      <!-- Services accordion Section -->
+      <section
+        class="section-padding accordion-sec bg-white"
+        id="accordion"
+      ></section>
 
-            <div class="col-lg-4 col-md-6 col-12 border-x-dark d-flex justify-content-around my-5">
-              <div class="about-service-box">
-                <div class="about-counter-box-thumb">
-                  <img src="/assets/images/svgs/service-icon-2.svg" alt="serviceImg" class="img-fluid">
-                </div>
-                <h4 class="about-counter-box-title text-black font-acl">
-                  <span class="total-project-count">247</span>+ total Projects
-                </h4>
-                <br />
-                <p class="text-black font-pop">
-                  We are a creative agency brands building insightful strategy,
-                  creating unique designs helping
-                </p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-around my-5">
-              <div class="about-service-box">
-                <div class="about-counter-box-thumb">
-                  <img src="/assets/images/svgs/service-icon-3.svg" alt="serviceImg" class="img-fluid">
-                </div>
-                <h4 class="about-counter-box-title text-black font-acl">
-                  <span class="happy-customer-count">140</span>+ Happy Customers
-                </h4>
-                <br />
-                <p class="text-black font-pop">
-                  We are a creative agency brands building insightful strategy,
-                  creating unique designs helping
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--  About us Services Section Ends -->
-
-
-      <!--  About us skill bar Section Starts -->
-
-      <section  class="bg-black section-padding relative skill-bar-sec" id="skill-bar"></section>
-
-
-      <!--  About us Team row 1 Section Ends -->
-
-      <section class="bg-white section-padding home-team-sec" id="home_team">
-        <div class="container">
-          <div id="team-row-1" class="row"></div>
-        </div>
-      </section>
-
-
-
-      <!-- get in touch Slider comp js section -->
-       <section id="get-in-touch" class="bg-white section-padding get-in-touch-sec my-5"></section>
-
-
-      <!-- Brand Slider Comp js  -->
-      <section id="brand-slider" ></section>
+      <!-- Get In Touch Section  -->
+       <section class="section-padding my-5 get-in-touch-sec bg-white" id="get-in-touch"></section>
     </main>
+
+    <!-- Brand Slider Section  -->
+    <section class="brand-slider" id="brand-slider"></section>
+
     <!-- ! Main content Ends -->
 
     <!-- ? local footer section components js  -->
@@ -185,13 +117,15 @@
 
     <!-- * brand slider section js component -->
     <script src="assets/components/section-comp/brand-slider.js"></script>
-    
-    
+
     <!-- * get in touch section js component -->
     <script src="assets/components/section-comp/get-in-touch.js"></script>
 
-    <!-- * get in touch section js component -->
+    <!-- * Skill bar section js component -->
     <script src="assets/components/section-comp/skill-bar.js"></script>
+
+    <!-- * accordion section js component -->
+    <script src="assets/components/section-comp/accordion.js"></script>
 
     <!-- ? GSAP CDN script link -->
 

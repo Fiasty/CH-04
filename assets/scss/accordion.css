@@ -1,0 +1,67 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+::-moz-selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.accordion-item {
+  border: none;
+  margin: 2rem 0;
+}
+.accordion-item .accordion-button {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.accordion-item .accordion-button:not(.collapsed) {
+  background: transparent;
+  color: #0a0c00;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.accordion-item .accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-item .accordion-body {
+  border-bottom: 1px solid rgba(10, 12, 0, 0.5019607843);
+}
+.accordion-item .accordion-body p {
+  margin-top: 1rem !important;
+  padding-bottom: 2rem;
+  font-size: 1.6rem;
+  max-width: 75%;
+}
+
+.accordion-button::after {
+  background-image: url("/assets/images/img/icon/arrow-left-white.svg");
+  rotate: 90deg;
+  background-color: #000000;
+  border-radius: 50%;
+  transition: 0.4s all ease;
+  background-position: center !important;
+  padding: 2rem;
+}
+
+.accordion-button:not(.collapsed):after {
+  background-image: url("/assets/images/img/icon/arrow-left.svg");
+  rotate: 90deg;
+  background-color: #a8f600 !important;
+}/*# sourceMappingURL=accordion.css.map */

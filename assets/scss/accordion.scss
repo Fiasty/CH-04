@@ -1,0 +1,52 @@
+@import "main";
+
+//   ****************************************************************
+// ! 15 . accordion -- content ----------------------------------
+//   ***************************************************************
+
+.accordion-item {
+    border: none;
+    margin: 2rem 0;
+    .accordion-button {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background: transparent;
+        color: $text-dark;
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .accordion-button:focus {
+        box-shadow: none;
+    }
+    .accordion-body {
+        border-bottom: 1px solid $border-dark;
+
+        p {
+            margin-top: 1rem !important;
+            padding-bottom: 2rem;
+            font-size: 1.6rem;
+            max-width: 75%;
+        }
+    }
+}
+
+.accordion-button::after{
+    background-image: url("/assets/images/img/icon/arrow-left-white.svg");
+    rotate: 90deg;
+    background-color: $color-black;
+    border-radius: 50%;
+    transition: 0.4s all ease;
+    background-position: center !important;
+    padding: 2rem;
+    
+}
+.accordion-button:not(.collapsed):after {
+    background-image: url("/assets/images/img/icon/arrow-left.svg");
+    rotate: 90deg;
+    background-color: $color-lemon !important;
+}

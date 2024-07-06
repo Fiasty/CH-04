@@ -1,0 +1,136 @@
+@import "main";
+
+//   ****************************************************************
+// ! 14 . services -- content ----------------------------------
+//   ***************************************************************
+
+.services-service-sec {
+    .service-box-col {
+        .wrap {
+            border: 1px solid black;
+            overflow: hidden !important;
+            margin: 1.5rem 0;
+            padding: 15px;
+            &:after {
+                content: "";
+                background: $text-dark;
+                position: absolute;
+                inset: 0;
+                opacity: 0;
+                z-index: 1;
+                transition: 0.4s;
+                margin: 16px 8px 16px 8px;
+            }
+            padding-top: 15px;
+            padding-bottom: 15px;
+            overflow: hidden;
+            img {
+                position: absolute;
+                overflow: hidden;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: 0.4s all ease;
+                -webkit-transition: 0.4s all ease;
+                -moz-transition: 0.4s all ease;
+                -ms-transition: 0.4s all ease;
+                -o-transition: 0.4s all ease;
+                padding: 15px 8px 15px 9px;
+            }
+            .service-box-details-wrap {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: space-between;
+                padding: 4rem;
+                z-index: 2;
+                position: relative;
+            }
+            h3 {
+                font-size: 3rem;
+                margin-bottom: 8rem;
+                z-index: 3;
+                transition: 0.4s all ease;
+                -webkit-transition: 0.4s all ease;
+                -moz-transition: 0.4s all ease;
+                -ms-transition: 0.4s all ease;
+                -o-transition: 0.4s all ease;
+            }
+            h4 {
+                margin-bottom: 2.5rem;
+                a {
+                    font-size: 2.4rem;
+                    transition: 0.4s all ease;
+                    -webkit-transition: 0.4s all ease;
+                    -moz-transition: 0.4s all ease;
+                    -ms-transition: 0.4s all ease;
+                    -o-transition: 0.4s all ease;
+                }
+            }
+            p {
+                font-size: 1.6rem;
+                margin-bottom: 6.7rem;
+                transition: 0.4s all ease;
+                -webkit-transition: 0.4s all ease;
+                -moz-transition: 0.4s all ease;
+                -ms-transition: 0.4s all ease;
+                -o-transition: 0.4s all ease;
+            }
+            .service-link-btn {
+                i {
+                    transition: 0.4s all ease;
+                    -webkit-transition: 0.4s all ease;
+                    -moz-transition: 0.4s all ease;
+                    -ms-transition: 0.4s all ease;
+                    -o-transition: 0.4s all ease;
+                }
+                font-size: 1.8rem;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                &:before {
+                    background: grey !important;
+                }
+                &:after {
+                    background: grey !important;
+                }
+            }
+        }
+    }
+}
+
+.services-service-sec {
+    .service-box-col {
+        .wrap {
+            &:hover {
+                &:after {
+                    content: "";
+                    opacity: 0.9;
+                }
+                img {
+                    position: absolute;
+                    opacity: 1;
+                }
+                h3 {
+                    color: $color-lemon !important;
+                }
+                h4 {
+                    a {
+                        color: $color-white !important;
+                    }
+                }
+                p {
+                    color: $color-white !important;
+                }
+                .service-link-btn {
+                    color: $color-white !important;
+                    i {
+                        color: $color-lemon !important;
+                    }
+                }
+            }
+        }
+    }
+}

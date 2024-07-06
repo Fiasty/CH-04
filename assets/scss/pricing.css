@@ -1,0 +1,146 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+::-moz-selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.pricing-plan-sec .plan-col {
+  margin-top: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.pricing-plan-sec .plan-col .pricing-plan-box {
+  background: #fffaf0;
+  padding: 2rem 3rem;
+}
+.pricing-plan-sec .plan-col .pricing-plan-box h4 {
+  font-size: 2.4rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.pricing-plan-sec .plan-col .pricing-plan-box h3 {
+  font-size: 6rem;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+.pricing-plan-sec .plan-col .pricing-plan-box h3 span:last-child {
+  font-size: 3rem;
+}
+.pricing-plan-sec .plan-col .pricing-plan-box p {
+  font-size: 1.6rem;
+}
+.pricing-plan-sec .plan-col .pricing-plan-box ul {
+  padding: 0;
+  line-height: 3;
+}
+.pricing-plan-sec .plan-col .pricing-plan-box ul li {
+  font-size: 1.8rem;
+}
+.pricing-plan-sec .plan-col .pricing-plan-box ul li i {
+  margin-right: 1rem;
+}
+.pricing-plan-sec .plan-col .pricing-plan-box .box-btn-wrap {
+  text-align: center;
+  margin-top: 3rem;
+}
+.pricing-plan-sec .plan-col .pricing-plan-box .box-btn-wrap a {
+  padding: 1.5rem 4rem;
+  font-size: 1.8rem;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+}
+.pricing-plan-sec .plan-col .pricing-plan-box .box-btn-wrap a:hover {
+  color: black !important;
+}
+
+.pricing-plan-box.active {
+  background: #000 !important;
+}
+.pricing-plan-box.active h4 {
+  color: #ffffff !important;
+}
+.pricing-plan-box.active h3 {
+  color: #ffffff !important;
+}
+.pricing-plan-box.active h3 span {
+  color: #ffffff !important;
+}
+.pricing-plan-box.active p {
+  color: #ffffff !important;
+}
+.pricing-plan-box.active ul li {
+  color: #ffffff !important;
+}
+.pricing-plan-box.active .box-btn-wrap {
+  text-align: center;
+}
+.pricing-plan-box.active .box-btn-wrap a {
+  padding: 1.5rem 4rem;
+  font-size: 1.8rem;
+  overflow: hidden;
+  z-index: 1;
+}
+.pricing-plan-box.active .box-btn-wrap a:hover {
+  color: black !important;
+}
+
+.pricing-plan-box {
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+}
+.pricing-plan-box:hover {
+  background: #000 !important;
+}
+.pricing-plan-box:hover h4 {
+  color: #ffffff !important;
+}
+.pricing-plan-box:hover h3 {
+  color: #ffffff !important;
+}
+.pricing-plan-box:hover h3 span {
+  color: #ffffff !important;
+}
+.pricing-plan-box:hover p {
+  color: #ffffff !important;
+}
+.pricing-plan-box:hover ul li {
+  color: #ffffff !important;
+}
+.pricing-plan-box:hover .box-btn-wrap {
+  text-align: center;
+}
+.pricing-plan-box:hover .box-btn-wrap a {
+  background: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #000000 !important;
+}
+.pricing-plan-box:hover .box-btn-wrap a:hover {
+  color: black !important;
+}/*# sourceMappingURL=pricing.css.map */
