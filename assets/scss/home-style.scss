@@ -267,6 +267,7 @@
 }
 
 // * Home services section styles
+
 .home-service-tab {
     display: none;
 }
@@ -293,10 +294,10 @@
             -moz-transition: 0.4s all ease;
             -ms-transition: 0.4s all ease;
             -o-transition: 0.4s all ease;
-            
+
             &:hover {
                 background: $color-black;
-                a {                    
+                a {
                     color: $color-white !important;
                     i {
                         color: $color-lemon;
@@ -325,5 +326,83 @@
                 rotate: -45deg;
             }
         }
+    }
+}
+
+.home-team-sec {
+    .container {
+        .row {
+            margin-bottom: 10rem;
+        }
+    }
+}
+
+// * Home Testimonial Section styles
+
+.testimonial-sec {
+    position: relative;
+    .container {
+        .row {
+            padding: 3rem 0;
+        }
+    }
+    .section-title {
+        position: absolute;
+        top: -10rem;
+        padding: 2rem 0 2rem 8.333%;
+    }
+    
+    .testimonial-slider {
+        .testimonial-thumb {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        padding: 3rem 0 3rem 8.333%;
+        .carousel {
+            p {
+                font-size: 2.8rem;
+            }
+            h6 {
+                font-size: 1.8rem;
+                padding-top: 3rem;
+            }
+            .testimonial-slider-control-wrap {
+                position: absolute;
+                right: 10%;
+                bottom: 0%;
+                display: flex;
+                gap: 2rem;
+                i {
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    opacity: 1;
+                }
+    
+                .btn:first-child {
+                    width: 5.2rem;
+                    height: 5.2rem;
+                    overflow: hidden;
+                    opacity: 1 !important;
+                }
+                .btn:last-child {
+                    width: 5.2rem;
+                    height: 5.2rem;
+                    overflow: hidden;
+                    opacity: 1 !important;
+                }
+            }
+        }
+        
+        z-index: 1;
+        overflow: visible !important;
+        .testimonial-quote-icon {
+            position: absolute;
+            top: -3rem !important;
+            left: -3rem;
+            opacity: 0.4 !important;
+            z-index: -1;
+            
+}
+
     }
 }

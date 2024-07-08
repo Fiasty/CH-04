@@ -1,0 +1,80 @@
+@import "main";
+
+//   ****************************************************************
+//  ! 17 . services-details -- content ----------------------------------
+//   ***************************************************************
+.form-section {
+    .form {
+        .form-group{
+            
+        }
+        h2 {
+            font-size: 6rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+        .form-wrap {
+            .btn {
+                padding: 2.3rem 4rem 2.1rem;
+                overflow: hidden;
+                z-index: 1;
+                font-size: 1.6rem;
+            }
+            label {
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                top: 41%;
+                margin-bottom: 0;
+            }
+            label[for="massage"] {
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                top: 0 !important;
+                margin-bottom: 0;
+            }
+            .form-control,
+            textarea {
+                height: 5rem;
+                border: none;
+                border-bottom: 1px solid black;
+                border-radius: 0;
+                padding-left: 3rem;
+                opacity: 1 !important;
+                z-index: 99;
+                color: black;
+                margin: 4rem 0;
+            }
+
+            textarea {
+                height: 155px;
+                margin-top: 0;
+                padding-top: 0;
+                &:focus-visible {
+                    outline: none !important;
+                }
+            }
+            input::-webkit-input-placeholder,
+            textarea::-webkit-input-placeholder,
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                color: #000 !important;
+                opacity: 1;
+                font-weight: 400;
+                font-size: 1.6rem;
+            }
+            .form-control:focus,
+            text-area:focus-visible {
+                border-color: inherit;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                outline: none !important;
+            }
+        }
+    }
+}

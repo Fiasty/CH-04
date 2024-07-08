@@ -1,0 +1,77 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+::-moz-selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.feedback-slider-sec .carousel .carousel-item .feedback-form-client {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.feedback-slider-sec .carousel .carousel-item .feedback-form-client h6 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.feedback-slider-sec .carousel .carousel-item .feedback-form-client p {
+  font-size: 1.6rem;
+}
+.feedback-slider-sec .carousel .carousel-item .feedback-form-review {
+  padding-bottom: 8rem;
+  margin-top: 1rem;
+}
+.feedback-slider-sec .carousel .carousel-item .feedback-form-review img {
+  position: absolute;
+  left: -6rem;
+  top: -1rem;
+  filter: grayscale(9) brightness(0);
+  -webkit-filter: grayscale(9) brightness(0);
+}
+.feedback-slider-sec .carousel .carousel-item .feedback-form-review p {
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+.feedback-slider-sec .carousel .feedback-slider-control-wrap {
+  position: absolute;
+  left: 42%;
+  bottom: 0%;
+  display: flex;
+  gap: 2rem;
+}
+.feedback-slider-sec .carousel .feedback-slider-control-wrap i {
+  font-weight: bold;
+  font-size: 1.5rem;
+  opacity: 1;
+}
+.feedback-slider-sec .carousel .feedback-slider-control-wrap .btn:first-child {
+  width: 5.2rem;
+  height: 5.2rem;
+  overflow: hidden;
+  opacity: 1 !important;
+}
+.feedback-slider-sec .carousel .feedback-slider-control-wrap .btn:last-child {
+  width: 5.2rem;
+  height: 5.2rem;
+  overflow: hidden;
+  opacity: 1 !important;
+}/*# sourceMappingURL=feedback-slider.css.map */
