@@ -51,13 +51,14 @@
     <link rel="stylesheet" href="assets/scss/get-in-touch.css" />
     <link rel="stylesheet" href="assets/scss/skill-bar.css" />
     <link rel="stylesheet" href="assets/scss/accordion.css" />
-    <link rel="stylesheet" href="assets/scss/feedback-slider.css" />
 
     <link rel="stylesheet" href="assets/scss/home-style.css" />
     <link rel="stylesheet" href="assets/scss/responsive.css" />
     <link rel="stylesheet" href="assets/scss/common.css" />
     <link rel="stylesheet" href="assets/scss/main.css" />
 
+    <!-- page Specific css links  -->
+    <link rel="stylesheet" href="/assets/scss/services-details.css" />
   </head>
 
   <body>
@@ -66,23 +67,21 @@
 
     <!-- ! Main content starts -->
     <main>
+      <section class="bg-white section-padding form-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+            <div class="col-12 section-title">
+              <h2 class="title font-acl text-black">Contact With Me</h2>
+            </div>
 
-      <!-- Services accordion Section -->
-      <section
-        class="section-padding accordion-sec bg-white"
-        id="accordion"
-      ></section>
+            <div class="form" id="form"></div>
+            </div>
 
-      <!-- Feedback Slider Section -->
-       <section class="section-padding feedback-slider-sec py-5 bg-lemon" id="feedback-slider"></section>
-
-      <!-- Get In Touch Section  -->
-       <section class="section-padding my-5 get-in-touch-sec bg-white" id="get-in-touch"></section>
+          </div>
+        </div>
+      </section>
     </main>
-
-    <!-- Brand Slider Section  -->
-    <section class="brand-slider" id="brand-slider"></section>
-
     <!-- ! Main content Ends -->
 
     <!-- ? local footer section components js  -->
@@ -120,19 +119,20 @@
     <!-- <script src="assets/components/blocks-comp/team-2.js"></script> -->
 
     <!-- * brand slider section js component -->
-    <script src="assets/components/section-comp/brand-slider.js"></script>
+    <!-- <script src="assets/components/section-comp/brand-slider.js"></script> -->
 
     <!-- * get in touch section js component -->
-    <script src="assets/components/section-comp/get-in-touch.js"></script>
+    <!-- <script src="assets/components/section-comp/get-in-touch.js"></script> -->
 
     <!-- * Skill bar section js component -->
     <!-- <script src="assets/components/section-comp/skill-bar.js"></script> -->
 
     <!-- * accordion section js component -->
-    <script src="assets/components/section-comp/accordion.js"></script>
-    
-    <!-- * accordion section js component -->
-    <script src="assets/components/section-comp/feedback-slider.js"></script>
+    <!-- <script src="assets/components/section-comp/accordion.js"></script> -->
+
+    <!-- * form block js block -->
+    <script src="assets/components/blocks-comp/form.js"></script>
+
     <!-- ? GSAP CDN script link -->
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -147,7 +147,7 @@
     <!-- ? Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVbD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
 

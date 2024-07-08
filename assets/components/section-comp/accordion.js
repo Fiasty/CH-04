@@ -4,7 +4,7 @@ fetch("index.html")
   .then((response) => response.text()) // Parse the response as text
   .then((htmlContent) => {
     accordion.innerHTML =
-      // team-row-1 html content starts
+      // accordion html content starts
       `
     <div class="container">
         <div class="row justify-content-center">
@@ -80,7 +80,7 @@ fetch("index.html")
 </div>
 
     `;
-    // team-row-1 Html content ends
+    // accordion Html content ends
   })
   .catch((error) => {
     console.error("Error fetching accordion:", error);
