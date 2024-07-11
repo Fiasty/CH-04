@@ -193,7 +193,21 @@ span {
         -o-transition: 0.4s all ease;
     }
 }
-
+// Link btn style 2
+.link-btn.style-2{
+&:before {
+    width: 100%;
+}
+&:after {
+    left: 0;
+}
+&:hover:after {
+    width: 100%;
+}
+&:hover:before {
+    width: 0;
+}
+}
 // black-color-link-btn 
 .link-btn-black {
     padding-bottom: 5px;

@@ -1,0 +1,49 @@
+@import "main";
+
+//   ****************************************************************
+// ! 19 . blog -- content ----------------------------------
+//   ***************************************************************
+
+.blog-list-sec {
+    .blog-list-col {
+        .blog-list-wrap {
+            margin: 5rem 0;
+            padding: 0 0.75rem;
+            .blog-list-thumb {
+                overflow: hidden;
+                cursor: default;
+                img {
+                    transition: 0.4s all ease;
+                    -webkit-transition: 0.4s all ease;
+                    -moz-transition: 0.4s all ease;
+                    -ms-transition: 0.4s all ease;
+                    -o-transition: 0.4s all ease;
+                }
+            }
+            h3 {
+                a {
+                    font-size: 2.4rem;
+                    background-image: linear-gradient(to left, $color-black, $color-black);
+                    background-repeat: no-repeat;
+                    background-position: 0 100%;
+                    background-size: 0 2px;
+                    transition: 1.2s;
+                    &:hover {
+                        background-size: 100% 2px;
+                    }
+                }
+            }
+            a.btn {
+                margin-top: 2rem;
+                
+            }
+            &:hover {
+                .blog-list-thumb {
+                    img {
+                        scale: 1.05;
+                    }
+                }
+            }
+        }
+    }
+}

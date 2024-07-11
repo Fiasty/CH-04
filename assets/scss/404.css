@@ -1,0 +1,55 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+::-moz-selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.error-sec .error-img {
+  margin: 0rem 0;
+}
+.error-sec .error-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.error-sec .error-details h2 {
+  margin: 13rem 0 0 0;
+}
+.error-sec .error-details p {
+  font-size: 2rem;
+  max-width: 470px;
+  margin: 3rem 0;
+}
+.error-sec .error-details a {
+  margin: 1rem 0;
+  padding: 1.7rem 4.1rem;
+  font-size: 1.8rem;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.error-sec .error-details a i {
+  font-weight: 900 !important;
+}/*# sourceMappingURL=404.css.map */

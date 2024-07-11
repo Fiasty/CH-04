@@ -1,0 +1,56 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+::-moz-selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.blog-list-sec .blog-list-col .blog-list-wrap {
+  margin: 5rem 0;
+  padding: 0 0.75rem;
+}
+.blog-list-sec .blog-list-col .blog-list-wrap .blog-list-thumb {
+  overflow: hidden;
+  cursor: default;
+}
+.blog-list-sec .blog-list-col .blog-list-wrap .blog-list-thumb img {
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+}
+.blog-list-sec .blog-list-col .blog-list-wrap h3 a {
+  font-size: 2.4rem;
+  background-image: linear-gradient(to left, #000000, #000000);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0 2px;
+  transition: 1.2s;
+}
+.blog-list-sec .blog-list-col .blog-list-wrap h3 a:hover {
+  background-size: 100% 2px;
+}
+.blog-list-sec .blog-list-col .blog-list-wrap a.btn {
+  margin-top: 2rem;
+}
+.blog-list-sec .blog-list-col .blog-list-wrap:hover .blog-list-thumb img {
+  scale: 1.05;
+}/*# sourceMappingURL=blog.css.map */

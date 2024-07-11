@@ -1,80 +1,99 @@
 @import "main";
 
 //   ****************************************************************
-//  ! 17 . services-details -- content ----------------------------------
+//  ! 23 . services-details -- content ----------------------------------
 //   ***************************************************************
-.form-section {
-    .form {
-        .form-group{
-            
-        }
-        h2 {
-            font-size: 6rem;
-            margin-bottom: 1rem;
-        }
-        p {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-        }
-        .form-wrap {
-            .btn {
-                padding: 2.3rem 4rem 2.1rem;
-                overflow: hidden;
-                z-index: 1;
-                font-size: 1.6rem;
-            }
-            label {
-                display: inline-block;
-                position: absolute;
-                left: 0;
-                top: 41%;
-                margin-bottom: 0;
-            }
-            label[for="massage"] {
-                display: inline-block;
-                position: absolute;
-                left: 0;
-                top: 0 !important;
-                margin-bottom: 0;
-            }
-            .form-control,
-            textarea {
-                height: 5rem;
-                border: none;
-                border-bottom: 1px solid black;
-                border-radius: 0;
-                padding-left: 3rem;
-                opacity: 1 !important;
-                z-index: 99;
-                color: black;
-                margin: 4rem 0;
-            }
 
-            textarea {
-                height: 155px;
-                margin-top: 0;
-                padding-top: 0;
-                &:focus-visible {
-                    outline: none !important;
+.services-details-sec {
+    .container {
+        padding: 4rem 0;
+        .row-1-col-1 {
+            p {
+                font-size: 1.8rem;
+                margin: 2rem 0;
+                opacity: 0.8;
+            }
+        }
+        .row-1-col-2 {
+            .xl-end {
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                h5 {
+                    font-size: 2.6rem;
+                }
+                ul {
+                    margin-top: 10rem !important;
+                    margin-bottom: 0;
+
+                    li {
+                        p {
+                            font-size: 1.6rem;
+                            margin-top: 2rem;
+                            padding-bottom: 0;
+                            margin-bottom: 0;
+                            opacity: 0.8;
+                            i {
+                                margin-right: 1rem;
+                            }
+                        }
+                    }
                 }
             }
-            input::-webkit-input-placeholder,
-            textarea::-webkit-input-placeholder,
-            input[type="text"],
-            input[type="email"],
-            textarea {
-                color: #000 !important;
-                opacity: 1;
-                font-weight: 400;
-                font-size: 1.6rem;
+        }
+        .row-1-col-3 {
+            padding: 5rem 0;
+        }
+        .row-2 {
+            margin-block-end: 5rem;
+            padding: 0rem 0 3rem 0;
+            h4 {
+                font-size: 4rem;
+                margin: 3rem 0 0 0;
             }
-            .form-control:focus,
-            text-area:focus-visible {
-                border-color: inherit;
-                -webkit-box-shadow: none;
-                box-shadow: none;
-                outline: none !important;
+            p {
+                font-size: 1.6rem;
+                margin: 1rem 0;
             }
         }
+        .row-3-col-1 {
+           h4 {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+           } 
+           p {
+            font-size: 1.6rem;
+           }
+           ul {
+            margin-top: 3rem;
+            li {
+                line-height: 2;
+                img {
+                    margin-right: 1rem;
+                }
+            }
+           }
+        }
+        .row {
+            .section-title {
+                margin: 8rem 0;
+            }
+            a {
+                font-size: 4rem;
+                transition: 0.4s all ease;
+            -webkit-transition: 0.4s all ease;
+            -moz-transition: 0.4s all ease;
+            -ms-transition: 0.4s all ease;
+            -o-transition: 0.4s all ease;
+            }
+            .shine {
+                margin-block-end: 2rem;
+            }
+        }        
+        .row-4-col-2 {
+            margin-top:15%;
+            
+}
     }
 }

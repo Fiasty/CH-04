@@ -229,6 +229,19 @@ span {
   -o-transition: 0.4s all ease;
 }
 
+.link-btn.style-2:before {
+  width: 100%;
+}
+.link-btn.style-2:after {
+  left: 0;
+}
+.link-btn.style-2:hover:after {
+  width: 100%;
+}
+.link-btn.style-2:hover:before {
+  width: 0;
+}
+
 .link-btn-black {
   padding-bottom: 5px;
 }
