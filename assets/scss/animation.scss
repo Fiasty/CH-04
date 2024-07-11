@@ -1,6 +1,5 @@
 @import "main";
 
-
 //   *****************************************************************
 // ! 8 . animation -- content ------------------------------------
 //   ***************************************************************
@@ -11,7 +10,6 @@
     animation: animation_custom_right 1.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s forwards;
     -webkit-animation: animation_custom_right 1.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s forwards;
     opacity: 0;
-
 }
 @keyframes animation_custom_right {
     0% {
@@ -23,7 +21,7 @@
         -moz-transform: translateX(5%);
         -ms-transform: translateX(5%);
         -o-transform: translateX(5%);
-}
+    }
 
     to {
         transform: translateX(0);
@@ -34,13 +32,13 @@
         -moz-transform: translateX(0);
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
-}
+    }
 }
 
 .animation_custom_left {
-    animation: animation_custom_left 1.3s cubic-bezier(.645,.045,.355,1) .4s forwards;
+    animation: animation_custom_left 1.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s forwards;
     opacity: 0;
-    -webkit-animation: animation_custom_left 1.3s cubic-bezier(.645,.045,.355,1) .4s forwards;
+    -webkit-animation: animation_custom_left 1.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s forwards;
 }
 
 @keyframes animation_custom_left {
@@ -48,29 +46,29 @@
         transform: translateX(-5%);
         -webkit-clip-path: inset(0 100% 0 0);
         clip-path: inset(0 100% 0 0);
-        opacity: 0    ;
+        opacity: 0;
         -webkit-transform: translateX(-5%);
         -moz-transform: translateX(-5%);
         -ms-transform: translateX(-5%);
         -o-transform: translateX(-5%);
-}
+    }
 
     to {
         transform: translateX(0);
         -webkit-clip-path: inset(0 0 0 0);
         clip-path: inset(0 0 0 0);
-        opacity: 1    ;
+        opacity: 1;
         -webkit-transform: translateX(0);
         -moz-transform: translateX(0);
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
-}
+    }
 }
 
 .animation_custom_top {
-    animation: animation_custom_top 1.3s cubic-bezier(.645,.045,.355,1) forwards;
+    animation: animation_custom_top 1.3s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
     opacity: 0;
-    -webkit-animation: animation_custom_top 1.3s cubic-bezier(.645,.045,.355,1) forwards;
+    -webkit-animation: animation_custom_top 1.3s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
 }
 
 @keyframes animation_custom_top {
@@ -78,23 +76,23 @@
         transform: translateY(-5%);
         -webkit-clip-path: inset(0 0 100% 0);
         clip-path: inset(0 0 100% 0);
-        opacity: 0    ;
+        opacity: 0;
         -webkit-transform: translateY(-5%);
         -moz-transform: translateY(-5%);
         -ms-transform: translateY(-5%);
         -o-transform: translateY(-5%);
-}
+    }
 
     to {
         transform: translateY(0);
         -webkit-clip-path: inset(0 0 0 0);
         clip-path: inset(0 0 0 0);
-        opacity: 1    ;
+        opacity: 1;
         -webkit-transform: translateY(0);
         -moz-transform: translateY(0);
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
-}
+    }
 }
 
 // ? Button animation styles
@@ -125,8 +123,6 @@
     background: white;
 }
 
-
-
 .btn-to-top-lemon-hover:before {
     content: "";
     position: absolute;
@@ -153,8 +149,6 @@
     background: $color-lemon !important;
 }
 
-
-
 .btn-to-top-lemon-hover:before {
     content: "";
     position: absolute;
@@ -181,8 +175,6 @@
     background: $color-lemon !important;
 }
 
-
-
 .btn-to-top-black-hover:before {
     content: "";
     position: absolute;
@@ -208,3 +200,38 @@
     top: -40%;
     background: $color-black !important;
 }
+
+// * image hover
+// ? Shine
+
+
+@keyframes hoverShine {
+    to {
+        left: 125%
+    }
+}
+
+.shine {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    &:before {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        display: block;
+        content: "";
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,.3));
+        transform: skewX(-25deg);
+        z-index: 1
+    }
+    
+}
+
+.shine-on:hover .shine:before {
+    animation: hoverShine 1.2s
+}
+

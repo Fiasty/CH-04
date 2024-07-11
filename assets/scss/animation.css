@@ -212,4 +212,32 @@ html {
 .btn-to-top-black-hover:hover:before {
   top: -40%;
   background: #000000 !important;
+}
+
+@keyframes hoverShine {
+  to {
+    left: 125%;
+  }
+}
+.shine {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.shine:before {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, 0.3));
+  transform: skewX(-25deg);
+  z-index: 1;
+}
+
+.shine-on:hover .shine:before {
+  animation: hoverShine 1.2s;
 }/*# sourceMappingURL=animation.css.map */

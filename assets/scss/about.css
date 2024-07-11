@@ -54,4 +54,92 @@ html {
   -moz-transition: 0.4s all ease-in-out;
   -ms-transition: 0.4s all ease-in-out;
   -o-transition: 0.4s all ease-in-out;
+}
+
+.home-team-sec {
+  z-index: 2;
+}
+.home-team-sec .skill-area-thumb-square-style {
+  display: grid;
+  width: 210px;
+  aspect-ratio: 1;
+  position: absolute;
+  bottom: 0rem;
+  right: 0;
+  gap: 0;
+  rotate: -90deg;
+  z-index: -1;
+  grid-template-rows: repeat(21, 1rem);
+  grid-template-columns: repeat(21, 1rem);
+}
+.home-team-sec .square-shape-1 {
+  background: #a8f600;
+  width: 3rem;
+  aspect-ratio: 1;
+  grid-row-start: 4;
+  grid-column-start: 16;
+}
+.home-team-sec .square-shape-2 {
+  background: #000000;
+  width: 3rem;
+  aspect-ratio: 1;
+  grid-row-start: 7;
+  grid-column-start: 13;
+}
+.home-team-sec .square-shape-3 {
+  background: #a8f600;
+  width: 3rem;
+  aspect-ratio: 1;
+  grid-row-start: 10;
+  grid-column-start: 10;
+}
+.home-team-sec .square-shape-4 {
+  background: #a8f600;
+  width: 9rem;
+  aspect-ratio: 1;
+  grid-row-start: 13;
+  grid-column-start: 1;
+}
+
+.award-sec {
+  padding-bottom: 5rem !important;
+}
+.award-sec .row .award-list-col {
+  padding-bottom: 5rem;
+}
+.award-sec .row .award-list-col ul {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.award-sec .row .award-list-col ul li {
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -ms-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  margin-bottom: -2px;
+  border-top: 2px solid #000000;
+  padding: 3rem 2rem;
+}
+.award-sec .row .award-list-col ul li:last-child {
+  border-bottom: 2px solid #000000;
+}
+.award-sec .row .award-list-col ul li h4 {
+  line-height: 1.4;
+}
+.award-sec .row .award-list-col ul li h4 a {
+  font-size: 2.8rem;
+}
+.award-sec .row .award-list-col ul li h4 p {
+  font-size: 1.8rem;
+}
+.award-sec .row .award-list-col ul li .award-year h4 {
+  font-size: 3rem;
+}
+.award-sec .row .award-list-col ul li:hover {
+  border-color: #ffffff !important;
+  background: #ffffff;
+  z-index: 2;
 }/*# sourceMappingURL=about.css.map */
