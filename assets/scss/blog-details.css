@@ -1,0 +1,23 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+::-moz-selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}/*# sourceMappingURL=blog-details.css.map */
