@@ -240,5 +240,4 @@ html {
 
 .shine-on:hover .shine:before {
   animation: hoverShine 1.2s;
-  -webkit-animation: hoverShine 1.2s;
 }/*# sourceMappingURL=animation.css.map */
