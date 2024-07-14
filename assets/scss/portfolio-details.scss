@@ -4,3 +4,71 @@
 // ! 25 . portfolio-details -- content ------------------------------------
 //   ***************************************************************
 
+.portfolio-details-sec {
+    p {
+        line-height: 2.8rem;
+    }
+    padding: 5rem 0 !important;
+    .container {
+        .row {
+            .disc-col {
+                border-top: 1px solid $border-dark;
+                padding: 3rem 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .disc-single-item {
+                max-width: 428px !important;
+                h5 {
+                    font-size: 1.8rem;
+                }
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+    .container {
+        .row {
+            .disc-title {
+                font-size: 4rem;
+                padding: 3rem 0;
+            }
+            .disc-text {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .container-fluid {
+        .row-images {
+            padding: 0 !important;
+            margin: 3rem 0;
+        }
+    }
+}
+
+
+.row-redirection {
+    margin-top: 5rem;
+    .redirection-col {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-between;
+        
+        img {
+            max-width: 297px;
+        }
+        a {
+            font-size: 1.8rem;
+            margin-bottom: 1.3rem;
+        }
+        &:last-child {
+            align-items: start;
+            a{
+                text-align: start;
+            }
+        }
+    }
+}
