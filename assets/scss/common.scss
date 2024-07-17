@@ -23,6 +23,12 @@ span {
 
 // ! Common html class styles
 
+.cursor-text {
+    cursor: text !important;
+}
+.italic {
+    font-style: italic !important;
+}
 .relative {
     position: relative;
 }
@@ -60,6 +66,7 @@ span {
 .bg-lemon {
     background: $color-lemon !important;
 }
+
 .border-white {
     border: 1px solid $color-white !important;
 }
@@ -322,4 +329,3 @@ span {
 }
 
 
-// ? Transparent btn styles

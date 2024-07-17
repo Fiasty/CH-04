@@ -39,6 +39,14 @@ span {
   color: #0a0c00;
 }
 
+.cursor-text {
+  cursor: text !important;
+}
+
+.italic {
+  font-style: italic !important;
+}
+
 .relative {
   position: relative;
 }

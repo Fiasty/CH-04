@@ -1,0 +1,73 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+::-moz-selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #a8f600;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.breadcrumb-sec {
+  background: #0a0c00;
+}
+.breadcrumb-sec .breadcrumb-col {
+  padding: 66px 0 141px;
+}
+.breadcrumb-sec .breadcrumb-col .page-title h1 {
+  margin-bottom: 25px;
+  font-size: 78px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 28px;
+  margin-right: 30px;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.breadcrumb-sec .breadcrumb-col .page-title h1 img {
+  position: absolute;
+  right: -3rem;
+  top: -3rem;
+}
+.breadcrumb-sec .breadcrumb-col .breadcrumb-items {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  padding: 0;
+}
+.breadcrumb-sec .breadcrumb-col .breadcrumb-items li {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.breadcrumb-sec .breadcrumb-col .breadcrumb-items a {
+  font-size: 1.6rem;
+}
+.breadcrumb-sec .breadcrumb-col .breadcrumb-items a:hover {
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+  color: #a8f600 !important;
+  opacity: 1 !important;
+}
+.breadcrumb-sec .breadcrumb-col .breadcrumb-items p {
+  font-size: 1.6rem;
+}/*# sourceMappingURL=breadcrumb.css.map */

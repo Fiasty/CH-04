@@ -1,0 +1,56 @@
+@import "main";
+
+//   ****************************************************************
+// ! 28 . breadcrumb -- content ----------------------------------
+//   ***************************************************************
+
+.breadcrumb-sec {
+    background: #0a0c00;
+    .breadcrumb-col {
+        padding: 66px 0 141px;
+        .page-title {
+            h1 {
+                margin-bottom: 25px;
+                font-size: 78px;
+                letter-spacing: -0.03em;
+                text-transform: uppercase;
+                font-weight: 400;
+                margin-top: 28px;
+                margin-right: 30px;
+                position: relative;
+                width: fit-content;
+                img {
+                    position: absolute;
+                    right: -3rem;
+                    top: -3rem;
+                }
+            }
+        }
+        .breadcrumb-items {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            align-items: center;
+            padding: 0;
+            li {
+                font-size: 1.6rem;
+                font-weight: bold;
+            }
+            a {
+                font-size: 1.6rem;
+                &:hover {
+                    transition: 0.4s all ease;
+                    -webkit-transition: 0.4s all ease;
+                    -moz-transition: 0.4s all ease;
+                    -ms-transition: 0.4s all ease;
+                    -o-transition: 0.4s all ease;
+                    color: $color-lemon !important;
+                    opacity: 1 !important;
+                }
+            }
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

@@ -3,6 +3,8 @@
 //   ****************************************************************
 // ! 4 . header -- content ----------------------------------
 //   ***************************************************************
+
+// ! Sticky header style
 .sticky-header {
         position: sticky;
         top: 0;
@@ -23,13 +25,12 @@
                                 color: $color-lemon;
                         }
                 }
-                
         }
         .sidebar-btn {
                 cursor: pointer;
                 width: 60px;
                 position: relative;
-                display: inline-block;
+                display: inline-block !important;
                 background: $color-lemon;
                 aspect-ratio: 1 !important;
                 border-radius: 50%;
@@ -48,7 +49,7 @@
                         -ms-transition: 0.2s all linear;
                         -o-transition: 0.2s all linear;
                 }
-                .line:nth-child(2n) {                        
+                .line:nth-child(2n) {
                         margin: auto;
                         height: 2.5px !important;
                 }
@@ -58,6 +59,179 @@
                 &:hover .line {
                         width: 24px;
                         margin: 4px auto;
+                }
+        }
+}
+
+// ! offcanvas styles
+
+.offcanvas-overlay.active {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: inline-block;
+        position: fixed;
+        z-index: -1;
+        transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -ms-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -o-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.offcanvas-body {
+        background: $color-black none repeat scroll 0 0;
+        height: 100%;
+        padding: 3rem;
+        position: fixed;
+        right: 0;
+        top: 0;
+        transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -ms-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -o-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        width: 340px;
+        z-index: 999;
+        overflow-y: scroll;
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        &.active {
+                transform: translateX(0);
+                -webkit-transform: translateX(0);
+                -moz-transform: translateX(0);
+                -ms-transform: translateX(0);
+                -o-transform: translateX(0);
+        }
+        .offcanvas-close-icon {
+                text-align: right;
+                margin-top: -16px;
+                margin-right: -1rem;
+                i {
+                        font-size: 2rem;
+                }
+        }
+        .offcanvas-title {
+                font-size: 1.8rem;
+                margin-bottom: 7px;
+        }
+        .offcanvas-info {
+                border-top: 1px solid #ffffff33;
+                margin: 3.5rem 0 2rem 0;
+                .offcanvas-address {
+                        padding-top: 2rem;
+                        a {
+                                font-size: 1.6rem;
+                                line-height: 1.6;
+                        }
+                }
+                .offcanvas-contact {
+                        margin-top: 2rem;
+                        a {
+                                font-size: 1.6rem;
+                                line-height: 1.8;
+                        }
+                }
+                .offcanvas-mail {
+                        a {
+                                font-size: 1.6rem;
+                                line-height: 1.6;
+                        }
+                }
+        }
+        .offcanvas-social {
+                ul {
+                        display: flex;
+                        gap: 1.3rem;
+                        flex-direction: row;
+                        li {
+                                a {
+                                        border: 1px solid #efefef;
+                                        width: 40px;
+                                        aspect-ratio: 1;
+                                        border-radius: 50%;
+                                        -webkit-border-radius: 50%;
+                                        -moz-border-radius: 50%;
+                                        -ms-border-radius: 50%;
+                                        -o-border-radius: 50%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        transition: 0.4s all ease;
+                                        -webkit-transition: 0.4s all ease;
+                                        -moz-transition: 0.4s all ease;
+                                        -ms-transition: 0.4s all ease;
+                                        -o-transition: 0.4s all ease;
+                                        i {
+                                                font-size: 1.6rem;
+                                                transition: 0.4s all ease;
+                                                -webkit-transition: 0.4s all ease;
+                                                -moz-transition: 0.4s all ease;
+                                                -ms-transition: 0.4s all ease;
+                                                -o-transition: 0.4s all ease;
+                                        }
+                                        &:hover {
+                                                background: $color-white;
+                                                i {
+                                                        color: $color-black !important;
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+.mobile-overlay.active {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: inline-block;
+        position: fixed;
+        z-index: -1;
+        transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -ms-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -o-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.mobile-body {
+        background: $color-black none repeat scroll 0 0;
+        height: 100%;
+        padding: 3rem;
+        position: fixed;
+        right: 0;
+        top: 0;
+        transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -ms-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -o-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        width: 340px;
+        z-index: 999;
+        overflow-y: scroll;
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        &.active {
+                transform: translateX(0);
+                -webkit-transform: translateX(0);
+                -moz-transform: translateX(0);
+                -ms-transform: translateX(0);
+                -o-transform: translateX(0);
+        }
+        .mobile-close-icon {
+                text-align: right;
+                margin-top: -16px;
+                margin-right: -1rem;
+                i {
+                        font-size: 2rem;
                 }
         }
 }

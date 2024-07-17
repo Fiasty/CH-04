@@ -114,4 +114,12 @@ html {
   .custom-container2 {
     max-width: 540px;
   }
+}
+@media (max-width: 767px) {
+  .mobile-btn {
+    display: inline-block !important;
+  }
+  .sidebar-btn {
+    display: none !important;
+  }
 }/*# sourceMappingURL=responsive.css.map */
