@@ -1,161 +1,153 @@
-@import 'main';
-
-
-
-
+@import "main";
 
 //   ****************************************************************
-        // ! 3 . responsive -- content ----------------------------------
+// ! 3 . responsive -- content ----------------------------------
 //   ***************************************************************
-
-
-
 
 // ! custom-container and container
 
 @media (max-width: 1500px) {
     .container {
-        max-width:1250px
+        max-width: 1250px;
     }
 }
 
 @media (max-width: 1199.98px) {
     .container {
-        max-width:960px
+        max-width: 960px;
     }
 }
 
 @media (max-width: 991.98px) {
     .container {
-        max-width:720px
+        max-width: 720px;
     }
 }
 
 @media (max-width: 767.98px) {
     .container {
-        max-width:100%
+        max-width: 100%;
     }
 }
 
-@media only screen and (min-width: 576px) and (max-width:767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
     .container {
-        max-width:540px
+        max-width: 540px;
     }
 }
 
 .custom-container {
-    max-width: 1675px
+    max-width: 1675px;
 }
 
 @media (max-width: 1800px) {
     .custom-container {
-        max-width:1600px
+        max-width: 1600px;
     }
 }
 
 @media (max-width: 1500px) {
     .custom-container {
-        max-width:900%
+        max-width: 900%;
     }
 }
 
 @media (max-width: 1199.98px) {
     .custom-container {
-        max-width:960px
+        max-width: 960px;
     }
 }
 
 @media (max-width: 991.98px) {
     .custom-container {
-        max-width:720px
+        max-width: 720px;
     }
 }
 
 @media (max-width: 767.98px) {
     .custom-container {
-        max-width:100%
+        max-width: 100%;
     }
 }
 
-@media only screen and (min-width: 576px) and (max-width:767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
     .custom-container {
-        max-width:540px
+        max-width: 540px;
     }
 }
 
 .custom-container2 {
-    max-width: 1650px
+    max-width: 1650px;
 }
 
 @media (max-width: 1800px) {
     .custom-container2 {
-        max-width:1600px
+        max-width: 1600px;
     }
 }
 
 @media (max-width: 1500px) {
     .custom-container2 {
-        max-width:100%
+        max-width: 100%;
     }
 }
 
 @media (max-width: 1199.98px) {
     .custom-container2 {
-        max-width:960px
+        max-width: 960px;
     }
 }
 
 @media (max-width: 991.98px) {
     .custom-container2 {
-        max-width:720px
+        max-width: 720px;
     }
 }
 
 @media (max-width: 767.98px) {
     .custom-container2 {
-        max-width:100%
+        max-width: 100%;
     }
 }
 
-@media only screen and (min-width: 576px) and (max-width:767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
     .custom-container2 {
-        max-width:540px
+        max-width: 540px;
     }
 }
 
+// ! Custom Media queries for all content
 
+// * Extra large (xl) >= 1200 px ==>
 
-// ! Custom Media queries for all content 
-
-// * Extra large (xl) >= 1200 px 
-
-@media (min-width: 1200px){
-
+@media (min-width: 1200px) {
 }
 
-// * Large (lg) >= 992 px
+// * Large (lg) >= 992 px ==>
 
-@media (min-width: 992px) and (max-width: 1199px){
-
-}
-// * Medium (md) >= 768 px
-
-@media (min-width: 768px) and (max-width: 991px){
-
-}
-// * Small (sm) >= 576 px
-
-@media (min-width: 576px) and (max-width: 767px){
-
-}
-// * Extra small (xs) < 575 px
-
-@media (min-width: 376px) and (max-width: 575px){
-
+@media (min-width: 992px) and (max-width: 1199px) {
 }
 
-// * Extra Extra small (xxs) < 375 px
+// * Medium (md) >= 768 px ==>
 
-@media (max-width: 375px){
+@media (max-width: 991px) {
+}
+// * Small (sm) >= 576 px ==>
 
+@media (max-width: 767px) {
+    .mobile-btn {
+        display: inline-block !important;
+    }
+    .sidebar-btn {
+        display: none !important;
+    }
+}
+// * Extra small (xs) < 575 px ==>
+
+@media (max-width: 575px) {
+}
+
+// * Extra Extra small (xxs) < 375 px ==>
+
+@media (max-width: 375px) {
 }
