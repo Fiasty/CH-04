@@ -131,16 +131,19 @@
 // * Medium (md) >= 768 px ==>
 
 @media (max-width: 991px) {
-}
-// * Small (sm) >= 576 px ==>
-
-@media (max-width: 767px) {
-    .mobile-btn {
+    nav.navbar.navbar-expand-md.bg-black {
+        padding: 15px 0;
+    }
+    .mobile-nav-btn.sidebar-btn {
         display: inline-block !important;
     }
     .sidebar-btn {
         display: none !important;
     }
+}
+// * Small (sm) >= 576 px ==>
+
+@media (max-width: 767px) {
 }
 // * Extra small (xs) < 575 px ==>
 

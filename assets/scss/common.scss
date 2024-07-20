@@ -79,6 +79,7 @@ span {
 }
 .border-to-white:hover {
     border-color: $color-white !important;
+    transition: 0.4s all ease;
 }
 .border-to-lemon:hover {
     border-color: $color-lemon !important;
