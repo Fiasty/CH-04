@@ -115,8 +115,11 @@ html {
     max-width: 540px;
   }
 }
-@media (max-width: 767px) {
-  .mobile-btn {
+@media (max-width: 991px) {
+  nav.navbar.navbar-expand-md.bg-black {
+    padding: 15px 0;
+  }
+  .mobile-nav-btn.sidebar-btn {
     display: inline-block !important;
   }
   .sidebar-btn {

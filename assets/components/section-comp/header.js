@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
               </div>
               <div class="offcanvas-log">
                 <a href="index.html">
-                  <img src="/assets/images/img/logo/logo-white.svg" alt="brandLogo">
+                  <img src="/assets/images/img/logo/logo-white.svg" alt="brandLogo" class="img-fluid">
                 </a>
               </div>
               <div class="offcanvas-info">
@@ -128,11 +128,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
             <!-- mobile-nav Starts -->
-            <div class="mobile-body bg-black p-5" id="mobile-body">
-              <div class="mobile-close-icon">
-                <button class="btn" data-target="mobile" data-action="close"><i class="fa fa-times text-white"></i></button>
+            <div class="mobile-body bg-black" id="mobile-body">
+              
+              <div class="mobile-nav-brand">
+                <a href="index.html">
+                  <img src="/assets/images/img/logo/logo-white.svg" alt="brandLogo" class="img-fluid">
+                </a>
+                <div class="mobile-close-icon">
+                  <button class="btn" data-target="mobile" data-action="close"><i class="fa-solid fa-xmark"></i></button>
+                </div>
               </div>
-              <h1>Hello World</h1>
+              
             
             </div>
             <div class="mobile-overlay" id="mobile-overlay"></div>
