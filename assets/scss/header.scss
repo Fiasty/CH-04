@@ -299,11 +299,10 @@
 .mobile-body.active {
         .mobile-close-icon {
                 .btn {
-                transform: rotate(1turn);
+                        transform: rotate(1turn);
                 }
         }
 }
-
 
 .mobile-body {
         position: fixed;
@@ -311,37 +310,179 @@
         top: 0;
         width: 300px !important;
         padding: 0;
-        padding-right: 30px;
+        // padding-right: 30px;
         max-width: 100%;
         height: 100%;
         z-index: 999;
-
-        .mobile-nav-brand {
+        .mobile-header-head-wrap {
+                padding-right: 30px;
                 position: relative;
-                padding: 30px 0 25px 25px;
-                display: flex;
-                flex-direction: row;
-                align-content: start;
-                justify-content: space-between;
-                text-align: left;
-                flex-wrap: nowrap;
-                .mobile-close-icon {
-                        text-align: center;
-                        font-size: 20px;
-                        width: 20px;
-                        cursor: pointer;
-                        z-index: 10;
-                        transition: all 0.5s ease;
-                        margin: -4px -1px 0 0;
-                        padding: 0;
-                        .btn {
+                .mobile-nav-brand {
+                        position: relative;
+                        padding: 30px 0 25px 25px;
+                        display: flex;
+                        flex-direction: row;
+                        align-content: start;
+                        justify-content: space-between;
+                        text-align: left;
+                        flex-wrap: nowrap;
+                        .mobile-close-icon {
+                                text-align: center;
+                                font-size: 20px;
+                                width: 20px;
+                                cursor: pointer;
+                                z-index: 10;
                                 transition: all 0.5s ease;
-                        }
-                        i {
-                                color: $color-lemon !important;
-                                font-weight: 900 !important;
+                                margin: -4px -1px 0 0;
+                                padding: 0;
+                                .btn {
+                                        transition: all 0.5s ease;
+                                }
+                                i {
+                                        color: $color-lemon !important;
+                                        font-weight: 900 !important;
+                                }
                         }
                 }
+                .mobile-nav-search {
+                        padding: 5px 0 25px 26px;
 
+                        input {
+                                display: block;
+                                width: calc(100% + 10px);
+                                border: none;
+                                padding: 10px 45px 10px 20px;
+                                font-size: 15px;
+                                height: 45px;
+                                background: hsla(0, 0%, 100%, 0.1);
+                                color: var(--tg-color-white-default);
+                                border-radius: 4px;
+                        }
+
+                        input::-webkit-input-placeholder,
+                        textarea::-webkit-input-placeholder,
+                        input[type="text"],
+                        input[type="email"],
+                        textarea {
+                                color: $color-white !important;
+                                opacity: 1;
+                                font-weight: 400;
+                                font-size: 1.6rem;
+                        }
+                        .form-control:focus,
+                        text-area:focus-visible {
+                                border-color: inherit;
+                                -webkit-box-shadow: none;
+                                box-shadow: none;
+                                outline: none !important;
+                        }
+                        .btn {
+                                position: absolute;
+                                right: 12px;
+                                top: 6px;
+                                font-size: 1.6rem;
+                        }
+                }
+        }
+        .mobile-nav-wrap {
+                .mobile-nav-ul {
+                    display: inline-block !important;
+                    width: 100% !important;
+                    li {
+                        margin: 0 !important;
+                        border-top: 1px solid #ffffff1a;
+                        &:last-child {
+                            border-bottom: 1px solid #ffffff1a;
+                        }
+                        .nav-link {
+                            padding: 10px 60px 10px 25px;
+                            font-family: $font-pop !important;
+                            font-weight: 500;                            
+                        }
+                        .dropdown-list {
+                            display: none;  // Ensure the dropdown list is hidden by default
+                            padding: 0;
+                            .nav-item {
+                                padding-left: 2rem !important;
+                            }
+                        }
+                    }
+                    .dropdown {
+                        position: relative;
+                        .dropdown-btn {
+                            position: absolute;
+                            right: 5px;
+                            top: 0px;
+                            .fa-plus {
+                                background: #ffffff1a;
+                                width: 32px;
+                                aspect-ratio: 1;
+                                line-height: 32px;
+                                border-radius: 3px;
+                                font-size: 1.6rem;
+                            }
+                            .fa-minus {
+                                display: none;
+                            }
+                            &.active {
+                                .fa-plus {
+                                    display: none;
+                                }
+                                .fa-minus {
+                                    display: block;
+                                    background: $color-white !important;
+                                    width: 32px;
+                                    aspect-ratio: 1;
+                                    line-height: 32px;
+                                    border-radius: 3px;
+                                    font-size: 1.6rem;
+                                    color: $color-black !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+
+        .mobile-header-foot-wrap {
+                position: relative;
+                padding: 30px 25px;
+                .mobile-nav-contact {
+                        a {
+                                font-size: 1.6rem;
+                                line-height: 4rem;
+                        }
+                }
+                .mobile-nav-social {
+                        margin-top: 2rem;
+                        ul {
+                                display: flex;
+                                gap: 2rem;
+                                li {
+                                        a {
+                                                i {
+                                                        font-size: 1.6rem;
+                                                        transition: 0.4s all ease;
+                                                        -webkit-transition: 0.4s all ease;
+                                                        -moz-transition: 0.4s all ease;
+                                                        -ms-transition: 0.4s all ease;
+                                                        -o-transition: 0.4s all ease;
+                                                }
+                                                &:hover {
+                                                        i {
+                                                                color: $color-lemon !important;
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+                }
         }
 }
+
+
+
+/* Example CSS to highlight the active link in green */
+
+    
