@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 <nav class="navbar navbar-expand-lg bg-black">
   <div class="container custom-container">
     <a class="navbar-brand" href="index.html">
-      <img src="assets/images/img/logo/logo-white.svg" alt="logoImg" />
+      <img src="assets/images/img/logo/logo-white.svg" alt="logoImg" class="logo-white"/>
+      <img src="assets/images/img/logo/logo.svg" alt="logoImg" class="logo-black"/>
     </a>
     <button class="mobile-nav-btn sidebar-btn btn" data-target="mobile" data-action="open">
       <div class="line"></div>
@@ -18,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a href="/index.html" class="nav-link" aria-current="page">
+          <a href="index.html" class="nav-link" aria-current="page">
             HOME
           </a>
         </li>
@@ -160,7 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <i class="fa fa-minus text-white"></i>
               <i class="fa fa-plus text-white"></i>
           </a>
-          <a href="" class="nav-link">PAGES</a>
+          <a href="/" class="nav-link">PAGES</a>
           <ul class="dropdown-list" aria-labelledby="mobPages">
             <li class="nav-item">
               <a href="about.html" class="nav-link" aria-current="page">
@@ -295,6 +296,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
+
       // Add event listeners for offcanvas functionality
       const offcanvasBtns = document.querySelectorAll(
         '[data-target="offcanvas"]'
@@ -359,6 +361,10 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       });
+
+
+
+
     })
     .catch((error) => {
       console.error("Error fetching header:", error);

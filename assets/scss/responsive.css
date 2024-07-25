@@ -116,11 +116,19 @@ html {
   }
 }
 @media (max-width: 991px) {
-  nav.navbar.navbar-expand-md.bg-black {
-    padding: 15px 0;
+  nav.navbar.navbar-expand-lg.bg-black {
+    padding: 15px 0 !important;
   }
   .mobile-nav-btn.sidebar-btn {
-    display: inline-block !important;
+    display: grid !important;
+    place-content: center;
+    padding: 0 !important;
+    width: 40px !important;
+  }
+  .mobile-nav-btn.sidebar-btn .line {
+    width: 20px !important;
+    margin: 2px 0;
+    height: 2px !important;
   }
   .sidebar-btn {
     display: none !important;

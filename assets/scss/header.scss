@@ -31,9 +31,10 @@
         }
         .sidebar-btn {
                 cursor: pointer;
-                width: 60px;
+                width: 60px !important;
                 position: relative;
-                display: inline-block !important;
+                display: grid !important;
+                place-content: center !important;
                 background: $color-lemon;
                 aspect-ratio: 1 !important;
                 border-radius: 50%;
@@ -43,25 +44,19 @@
                 .line {
                         display: block;
                         background: $color-black;
-                        width: 20px;
-                        height: 2.5px !important;
+                        width: 25px;
+                        height: 3px !important;
                         margin: 4px 0;
                         transition: 0.2s all linear;
                         -webkit-transition: 0.2s all linear;
                         -moz-transition: 0.2s all linear;
                         -ms-transition: 0.2s all linear;
                         -o-transition: 0.2s all linear;
-                }
-                .line:nth-child(2n) {
-                        margin: auto;
-                        height: 2.5px !important;
+                        margin: 3px 0;
                 }
                 &:hover .line.line:nth-child(2n) {
-                        width: 15px;
-                }
-                &:hover .line {
-                        width: 24px;
-                        margin: 4px auto;
+                        transform: scaleX(0.7);
+                        transform-origin: center;
                 }
         }
 }
@@ -386,64 +381,66 @@
         }
         .mobile-nav-wrap {
                 .mobile-nav-ul {
-                    display: inline-block !important;
-                    width: 100% !important;
-                    li {
-                        margin: 0 !important;
-                        border-top: 1px solid #ffffff1a;
-                        &:last-child {
-                            border-bottom: 1px solid #ffffff1a;
-                        }
-                        .nav-link {
-                            padding: 10px 60px 10px 25px;
-                            font-family: $font-pop !important;
-                            font-weight: 500;                            
-                        }
-                        .dropdown-list {
-                            display: none;  // Ensure the dropdown list is hidden by default
-                            padding: 0;
-                            .nav-item {
-                                padding-left: 2rem !important;
-                            }
-                        }
-                    }
-                    .dropdown {
-                        position: relative;
-                        .dropdown-btn {
-                            position: absolute;
-                            right: 5px;
-                            top: 0px;
-                            .fa-plus {
-                                background: #ffffff1a;
-                                width: 32px;
-                                aspect-ratio: 1;
-                                line-height: 32px;
-                                border-radius: 3px;
-                                font-size: 1.6rem;
-                            }
-                            .fa-minus {
-                                display: none;
-                            }
-                            &.active {
-                                .fa-plus {
-                                    display: none;
+                        display: inline-block !important;
+                        width: 100% !important;
+                        li {
+                                margin: 0 !important;
+                                border-top: 1px solid #ffffff1a;
+                                &:last-child {
+                                        border-bottom: 1px solid #ffffff1a;
                                 }
-                                .fa-minus {
-                                    display: block;
-                                    background: $color-white !important;
-                                    width: 32px;
-                                    aspect-ratio: 1;
-                                    line-height: 32px;
-                                    border-radius: 3px;
-                                    font-size: 1.6rem;
-                                    color: $color-black !important;
+                                .nav-link {
+                                        padding: 10px 60px 10px 25px;
+                                        font-family: $font-pop !important;
+                                        font-weight: 500;
+                                        &.active {
+                                                border-left: 2px solid $color-lemon;
+                                        }
                                 }
-                            }
+                                .dropdown-list {
+                                        display: none;
+                                        padding: 0;
+                                        .nav-item {
+                                                padding-left: 2rem !important;
+                                        }
+                                }
                         }
-                    }
+                        .dropdown {
+                                position: relative;
+                                .dropdown-btn {
+                                        position: absolute;
+                                        right: 5px;
+                                        top: 0px;
+                                        .fa-plus {
+                                                background: #ffffff1a;
+                                                width: 32px;
+                                                aspect-ratio: 1;
+                                                line-height: 32px;
+                                                border-radius: 3px;
+                                                font-size: 1.6rem;
+                                        }
+                                        .fa-minus {
+                                                display: none;
+                                        }
+                                        &.active {
+                                                .fa-plus {
+                                                        display: none;
+                                                }
+                                                .fa-minus {
+                                                        display: block;
+                                                        background: $color-white !important;
+                                                        width: 32px;
+                                                        aspect-ratio: 1;
+                                                        line-height: 32px;
+                                                        border-radius: 3px;
+                                                        font-size: 1.6rem;
+                                                        color: $color-black !important;
+                                                }
+                                        }
+                                }
+                        }
                 }
-            }
-            
+        }
 
         .mobile-header-foot-wrap {
                 position: relative;
@@ -481,8 +478,60 @@
         }
 }
 
+// * variable styles for logos and sidebar btn (color change according to the pages )
+// ? Default
+.logo-white {
+        display: block;
+}
+.logo-black {
+        display: none;
+}
 
+/* Styles for dropdown button */
+.sidebar-btn {
+        background: white !important; /* Default color */
+}
 
-/* Example CSS to highlight the active link in green */
+/* Home page styles */
+.home .logo-white {
+        display: block;
+}
+.home .logo-black {
+        display: none;
+}
+.home .sidebar-btn {
+        background: $color-lemon !important;
+}
 
-    
+/* Error page styles */
+.error .logo-white {
+        display: none;
+}
+.error .navbar.navbar-expand-lg.bg-black {
+        background-color: white !important;
+        .sidebar-btn {
+                .line {
+                        background: $color-white;
+                }
+        }
+}
+.error .logo-black {
+        display: block;
+}
+
+.error .sidebar-btn {
+        background: black !important;
+}
+
+/* Other pages styles */
+.other .logo-white {
+        display: none;
+}
+
+.other .logo-black {
+        display: block;
+}
+
+.other .sidebar-btn {
+        background: white !important;
+}

@@ -20,3 +20,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+
+// home, other , error class to body
+document.addEventListener('DOMContentLoaded', () => {
+  // Get the meta tag for the page identifier
+  const pageMeta = document.querySelector('meta[name="page"]');
+  const pageType = pageMeta ? pageMeta.getAttribute('content') : 'other';
+
+  // Select the body element
+  const body = document.body;
+
+  // Remove existing page-specific classes
+  body.classList.remove('home', 'error', 'other');
+
+  // Apply new page-specific class based on the meta tag content
+  body.classList.add(pageType);
+
+  // Example logging to verify the pageType value
+  console.log(`Page type detected: ${pageType}`);
+});
