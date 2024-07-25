@@ -42,3 +42,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // Example logging to verify the pageType value
   console.log(`Page type detected: ${pageType}`);
 });
+

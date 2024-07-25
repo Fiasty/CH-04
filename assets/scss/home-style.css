@@ -341,7 +341,7 @@ html {
 .testimonial-sec .testimonial-slider .carousel p {
   font-size: 2.8rem;
 }
-.testimonial-sec .testimonial-slider .carousel h6 {
+.testimonial-sec .testimonial-slider .carousel .testimonial-client-name {
   font-size: 1.8rem;
   padding-top: 3rem;
 }

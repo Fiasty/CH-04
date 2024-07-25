@@ -4,6 +4,7 @@
 // ! 7 . home-style -- content ----------------------------------
 //   ***************************************************************
 // * Home Hero section styles
+
 .sec-hero {
     padding: 12rem 0;
     .hero-typography {
@@ -362,7 +363,7 @@
             p {
                 font-size: 2.8rem;
             }
-            h6 {
+            .testimonial-client-name{
                 font-size: 1.8rem;
                 padding-top: 3rem;
             }
@@ -406,3 +407,4 @@
 
     }
 }
+

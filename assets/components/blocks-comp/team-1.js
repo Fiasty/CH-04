@@ -27,7 +27,7 @@ fetch("index.html")
                     <p class="member-designation text-white font-pop text-capitalize">Creative Director</p>
                 </div>
                 <div class="member-social">
-                    <button class="btn member-social-icon">
+                    <button class="button btn member-social-icon" aria-label="Add Member">
                         <i class="fas fa-plus text-lemon"></i>
                     </button>
                     <div class="member-social-links-wrap">
@@ -60,7 +60,7 @@ fetch("index.html")
                     <p class="member-designation text-white font-pop text-capitalize">Creative Director</p>
                 </div>
                 <div class="member-social">
-                    <button class="btn member-social-icon">
+                    <button class="button btn member-social-icon" aria-label="Add Member">
                         <i class="fas fa-plus text-lemon"></i>
                     </button>
                     <div class="member-social-links-wrap">
@@ -93,7 +93,7 @@ fetch("index.html")
                     <p class="member-designation text-white font-pop text-capitalize">Creative Director</p>
                 </div>
                 <div class="member-social">
-                    <button class="btn member-social-icon">
+                    <button class="button btn member-social-icon" aria-label="Add Member">
                         <i class="fas fa-plus text-lemon"></i>
                     </button>
                     <div class="member-social-links-wrap">
@@ -126,7 +126,7 @@ fetch("index.html")
                     <p class="member-designation text-white font-pop text-capitalize">Creative Director</p>
                 </div>
                 <div class="member-social">
-                    <button class="btn member-social-icon">
+                    <button class="button btn member-social-icon" aria-label="Add Member">
                         <i class="fas fa-plus text-lemon"></i>
                     </button>
                     <div class="member-social-links-wrap">

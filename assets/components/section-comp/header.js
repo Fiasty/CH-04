@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <img src="assets/images/img/logo/logo-white.svg" alt="logoImg" class="logo-white"/>
       <img src="assets/images/img/logo/logo.svg" alt="logoImg" class="logo-black"/>
     </a>
-    <button class="mobile-nav-btn sidebar-btn btn" data-target="mobile" data-action="open">
+    <button class="button mobile-nav-btn sidebar-btn btn" data-target="mobile" data-action="open">
       <div class="line"></div>
       <div class="line"></div>
       <div class="line"></div>
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </a>
         </li>
       </ul>
-      <button class="sidebar-btn btn" data-target="offcanvas" data-action="open">
+      <button class="button sidebar-btn btn" data-target="offcanvas" data-action="open">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- Offcanvas Starts -->
 <div class="offcanvas-body bg-black p-5" id="offcanvas-body">
   <div class="offcanvas-close-icon">
-    <button class="btn" data-target="offcanvas" data-action="close"><i class="fa fa-times text-white"></i></button>
+    <button class="button btn" data-target="offcanvas" data-action="close"><i class="fa fa-times text-white"></i></button>
   </div>
   <div class="offcanvas-log">
     <a href="index.html">
@@ -133,14 +133,14 @@ document.addEventListener("DOMContentLoaded", () => {
         <img src="/assets/images/img/logo/logo-white.svg" alt="brandLogo" class="img-fluid">
       </a>
       <div class="mobile-close-icon">
-        <button class="btn" data-target="mobile" data-action="close"><i class="fa-solid fa-xmark"></i></button>
+        <button class="button btn" data-target="mobile" data-action="close"><i class="fa-solid fa-xmark"></i></button>
       </div>
     </div>
     <div class="mobile-nav-search">
       <form action="#" class="relative">
         <input type="text" name="name" id="name" class="form-control font-pop" placeholder="Search here..."
           aria-describedby="helpId" />
-        <button class="btn" type="submit">
+        <button class="button btn" type="submit">
           <i class="fa fa-search text-lemon"></i>
         </button>
       </form>
