@@ -522,6 +522,20 @@
 .error .sidebar-btn {
         background: black !important;
 }
+.error {
+        .sticky-header .navbar-nav .nav-link {
+                color : $color-black;
+                &.active {
+                        color: $color-lemon;
+                }
+        }
+        .mobile-body .navbar-nav .nav-link {
+                color : $color-white;
+                &.active {
+                        color: $color-lemon;
+                }
+            }
+}
 
 /* Other pages styles */
 .other .logo-white {

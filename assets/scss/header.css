@@ -507,6 +507,19 @@ html {
   background: black !important;
 }
 
+.error .sticky-header .navbar-nav .nav-link {
+  color: #000000;
+}
+.error .sticky-header .navbar-nav .nav-link.active {
+  color: #a8f600;
+}
+.error .mobile-body .navbar-nav .nav-link {
+  color: #ffffff;
+}
+.error .mobile-body .navbar-nav .nav-link.active {
+  color: #a8f600;
+}
+
 /* Other pages styles */
 .other .logo-white {
   display: none;
