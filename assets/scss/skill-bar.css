@@ -25,6 +25,7 @@ html {
 .skill-bar-sec .skill-bar-disc {
   margin-bottom: 3rem;
   font-size: 1.8rem;
+  opacity: 0.8;
 }
 .skill-bar-sec .skill-area-bg-square-style {
   display: grid;

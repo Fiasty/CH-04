@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 <nav class="navbar navbar-expand-lg bg-black">
   <div class="container custom-container">
     <a class="navbar-brand" href="index.html">
-      <img src="assets/images/img/logo/logo-white.svg" alt="logoImg" class="logo-white"/>
-      <img src="assets/images/img/logo/logo.svg" alt="logoImg" class="logo-black"/>
+      <img src="assets/images/img/logo/logo-white.svg" alt="logoImg" class="logo-white" />
+      <img src="assets/images/img/logo/logo.svg" alt="logoImg" class="logo-black" />
     </a>
     <button class="button mobile-nav-btn sidebar-btn btn" data-target="mobile" data-action="open">
       <div class="line"></div>
@@ -30,28 +30,45 @@ document.addEventListener("DOMContentLoaded", () => {
           </a>
         </li>
 
-        <li class="nav-item">
-          <a href="services.html" class="nav-link" aria-current="page">
+        <li class="nav-item dropdown">
+          <a href="services.html" class="nav-link dropdown-toggle" aria-current="page">
             SERVICES
           </a>
+          <ul class="dropdown-box">
+            <li><a class="nav-link" href="services.html">Services</a></li>
+            <li><a class="nav-link" href="services-details.html">Service Details</a></li>
+          </ul>
         </li>
 
-        <li class="nav-item">
-          <a href="team.html" class="nav-link" aria-current="page">
-            OUR TEAM
+        <li class="nav-item dropdown">
+          <a href="team.html" class="nav-link dropdown-toggle" aria-current="page">
+            TEAM
           </a>
+          <ul class="dropdown-box">
+            <li><a class="nav-link" href="team.html">Our Team</a></li>
+            <li><a class="nav-link" href="team-details.html">Team Details</a></li>
+          </ul>
         </li>
 
-        <li class="nav-item">
-          <a href="portfolio.html" class="nav-link" aria-current="page">
-            PORTFOLIO
+        <li class="nav-item dropdown">
+          <a href="portfolio.html" class="nav-link dropdown-toggle" aria-current="page">
+              PORTFOLIO
           </a>
-        </li>
+          <ul class="dropdown-box">
+              <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+              <li><a class="nav-link" href="portfolio-details.html">Portfolio Details</a></li>
+          </ul>
+      </li>
+      
 
-        <li class="nav-item">
-          <a href="blog.html" class="nav-link" aria-current="page">
-            BLOGS
+        <li class="nav-item dropdown">
+          <a href="blog.html" class="nav-link dropdown-toggle" aria-current="page">
+            BLOG
           </a>
+          <ul class="dropdown-box">
+            <li><a class="nav-link" href="blog.html">Blog</a></li>
+            <li><a class="nav-link" href="blog-details.html">Blog Details</a></li>
+          </ul>
         </li>
 
         <li class="nav-item">
@@ -72,7 +89,8 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- Offcanvas Starts -->
 <div class="offcanvas-body bg-black p-5" id="offcanvas-body">
   <div class="offcanvas-close-icon">
-    <button class="button btn" data-target="offcanvas" data-action="close"><i class="fa fa-times text-white"></i></button>
+    <button class="button btn" data-target="offcanvas" data-action="close"><i
+        class="fa fa-times text-white"></i></button>
   </div>
   <div class="offcanvas-log">
     <a href="index.html">
@@ -149,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   <div class="mobile-nav-wrap">
     <ul class="mobile-nav-ul p-0 navbar-nav">
-      
+
       <li class="nav-item">
         <a href="index.html" class="nav-link" aria-current="page">
           HOME
@@ -157,81 +175,81 @@ document.addEventListener("DOMContentLoaded", () => {
       </li>
 
       <li class="dropdown">
-          <a class="btn dropdown-btn" role="button" data-action="dropdown" data-target="mobPages">
-              <i class="fa fa-minus text-white"></i>
-              <i class="fa fa-plus text-white"></i>
-          </a>
-          <a href="/" class="nav-link">PAGES</a>
-          <ul class="dropdown-list" aria-labelledby="mobPages">
-            <li class="nav-item">
-              <a href="about.html" class="nav-link" aria-current="page">
-                About Us
-              </a>
-              </li>
-              <li class="nav-item">
-                <a href="services.html" class="nav-link" aria-current="page">
-                  Services
-                </a>
-                </li>
-              <li class="nav-item">
-                  <a href="services-details.html" aria-current="page" class="nav-link">Service Details</a>
-              </li>
-              <li class="nav-item">
-                  <a href="team.html" aria-current="page" class="nav-link">Our Team</a>
-              </li>
-              <li class="nav-item">
-                  <a href="team-details.html" aria-current="page" class="nav-link">Team Details</a>
-              </li>
-              <li class="nav-item">
-                  <a href="pricing.html" aria-current="page" class="nav-link">Pricing</a>
-              </li>
-              <li class="nav-item">
-                  <a href="faq.html" aria-current="page" class="nav-link">FAQ Page</a>
-              </li>
-              <li class="nav-item">
-                  <a href="404.html" aria-current="page" class="nav-link">404 Error Page</a>
-              </li>
-          </ul>
+        <a class="btn dropdown-btn" role="button" data-action="dropdown" data-target="mobPages">
+          <i class="fa fa-minus text-white"></i>
+          <i class="fa fa-plus text-white"></i>
+        </a>
+        <a href="about.html" class="nav-link">PAGES</a>
+        <ul class="dropdown-list" aria-labelledby="mobPages">
+          <li class="nav-item">
+            <a href="about.html" class="nav-link" aria-current="page">
+              About Us
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link" aria-current="page">
+              Services
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="services-details.html" aria-current="page" class="nav-link">Service Details</a>
+          </li>
+          <li class="nav-item">
+            <a href="team.html" aria-current="page" class="nav-link">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a href="team-details.html" aria-current="page" class="nav-link">Team Details</a>
+          </li>
+          <li class="nav-item">
+            <a href="pricing.html" aria-current="page" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="faq.html" aria-current="page" class="nav-link">FAQ Page</a>
+          </li>
+          <li class="nav-item">
+            <a href="404.html" aria-current="page" class="nav-link">404 Error Page</a>
+          </li>
+        </ul>
       </li>
-  
+
       <li class="dropdown">
-          <a class="btn dropdown-btn" role="button" data-action="dropdown" data-target="mobPortfolio">
-              <i class="fa fa-minus text-white"></i>
-              <i class="fa fa-plus text-white"></i>
-          </a>
-          <a href="/" class="nav-link">PORTFOLIO</a>
-          <ul class="dropdown-list" aria-labelledby="mobPortfolio">
-              <li class="nav-item">
-                  <a href="portfolio.html" aria-current="page" class="nav-link">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                  <a href="portfolio-details.html" aria-current="page" class="nav-link">Portfolio Details</a>
-              </li>
-          </ul>
+        <a class="btn dropdown-btn" role="button" data-action="dropdown" data-target="mobPortfolio">
+          <i class="fa fa-minus text-white"></i>
+          <i class="fa fa-plus text-white"></i>
+        </a>
+        <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
+        <ul class="dropdown-list" aria-labelledby="mobPortfolio">
+          <li class="nav-item">
+            <a href="portfolio.html" aria-current="page" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="portfolio-details.html" aria-current="page" class="nav-link">Portfolio Details</a>
+          </li>
+        </ul>
       </li>
 
       <li class="dropdown">
         <a class="btn dropdown-btn" role="button" data-action="dropdown" data-target="mobBlog">
-            <i class="fa fa-minus text-white"></i>
-            <i class="fa fa-plus text-white"></i>
+          <i class="fa fa-minus text-white"></i>
+          <i class="fa fa-plus text-white"></i>
         </a>
-        <a href="/" class="nav-link">BLOG</a>
+        <a href="blog.html" class="nav-link">BLOG</a>
         <ul class="dropdown-list" aria-labelledby="mobBlog">
-            <li class="nav-item">
-                <a href="blog.html" aria-current="page" class="nav-link ">Our Blogs</a>
-            </li>
-            <li class="nav-item">
-                <a href="blog-details.html" aria-current="page" class="nav-link">Blog Details</a>
-            </li>
+          <li class="nav-item">
+            <a href="blog.html" aria-current="page" class="nav-link ">Our Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog-details.html" aria-current="page" class="nav-link">Blog Details</a>
+          </li>
         </ul>
-    </li>
+      </li>
 
-    <li class="nav-item">
-      <a href="contact.html" aria-current="page" class="nav-link">CONTACT</a>
-  </li>
+      <li class="nav-item">
+        <a href="contact.html" aria-current="page" class="nav-link">CONTACT</a>
+      </li>
 
-  </ul>
-  
+    </ul>
+
 
   </div>
 
@@ -296,7 +314,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-
       // Add event listeners for offcanvas functionality
       const offcanvasBtns = document.querySelectorAll(
         '[data-target="offcanvas"]'
@@ -360,8 +377,9 @@ document.addEventListener("DOMContentLoaded", () => {
             this.classList.add("active");
           }
         });
-      });
-
+      });      
+      
+      
 
 
 

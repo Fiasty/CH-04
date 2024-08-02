@@ -252,6 +252,10 @@ html {
   padding: 14px;
 }
 
+.dropdown-toggle::after {
+  display: none !important;
+}
+
 .dropdown {
   position: relative;
 }

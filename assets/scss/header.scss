@@ -244,6 +244,9 @@
 }
 
 // ! Dropdown styles
+.dropdown-toggle::after {
+        display: none !important;
+}
 .dropdown {
         position: relative;
 }
@@ -524,17 +527,17 @@
 }
 .error {
         .sticky-header .navbar-nav .nav-link {
-                color : $color-black;
+                color: $color-black;
                 &.active {
                         color: $color-lemon;
                 }
         }
         .mobile-body .navbar-nav .nav-link {
-                color : $color-white;
+                color: $color-white;
                 &.active {
                         color: $color-lemon;
                 }
-            }
+        }
 }
 
 /* Other pages styles */

@@ -6,7 +6,7 @@ fetch('index.html')
     teamRow2.innerHTML = 
     // team-row-2 html content starts
     `
-      <div class="col-xl-3 col-lg-4 col-md-6 team-card-col animation_custom_top">
+      <div class="col-xl-3 col-lg-3 col-md-6 team-card-col animation_custom_top">
         <div class="team-card relative">
             <div class="team-card-wrap">
             <div class="team-card-thumb">
@@ -39,7 +39,7 @@ fetch('index.html')
       </div>
 
 
-      <div class="col-xl-3 col-lg-4 col-md-6 team-card-col animation_custom_top">
+      <div class="col-xl-3 col-lg-3 col-md-6 team-card-col animation_custom_top">
         <div class="team-card relative">
             <div class="team-card-wrap">
             <div class="team-card-thumb">
@@ -72,7 +72,7 @@ fetch('index.html')
       </div>
 
 
-      <div class="col-xl-3 col-lg-4 col-md-6 team-card-col animation_custom_top">
+      <div class="col-xl-3 col-lg-3 col-md-6 team-card-col animation_custom_top">
         <div class="team-card relative">
             <div class="team-card-wrap">
             <div class="team-card-thumb">
@@ -105,7 +105,7 @@ fetch('index.html')
       </div>
 
 
-      <div class="col-xl-3 col-lg-4 col-md-6 team-card-col animation_custom_top">
+      <div class="col-xl-3 col-lg-3 col-md-6 team-card-col animation_custom_top">
         <div class="team-card relative">
             <div class="team-card-wrap">
             <div class="team-card-thumb">
