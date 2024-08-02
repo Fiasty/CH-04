@@ -46,14 +46,15 @@
     <link rel="stylesheet" href="assets/scss/skill-bar.css" />
     <link rel="stylesheet" href="assets/scss/accordion.css" />
     <link rel="stylesheet" href="assets/scss/form.css" />
+    <link rel="stylesheet" href="assets/scss/breadcrumb.css" />
 
     <link rel="stylesheet" href="assets/scss/home-style.css" />
-    <link rel="stylesheet" href="assets/scss/responsive.css" />
     <link rel="stylesheet" href="assets/scss/common.css" />
     <link rel="stylesheet" href="assets/scss/main.css" />
 
     <!-- page Specific css links  -->
     <link rel="stylesheet" href="/assets/scss/team-details.css" />
+    <link rel="stylesheet" href="assets/scss/responsive.css" />
   </head>
 
   <body>
@@ -62,6 +63,38 @@
 
     <!-- ! Main content starts -->
     <main>
+      <!-- Breadcrumb section Starts -->
+      <section class="breadcrumb-sec" id="breadcrumb">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 breadcrumb-col">
+              <div class="page-title">
+                <h1 class="title font-acl text-white text-uppercase">
+                  Team Details
+                  <img
+                  src="/assets/images/img/others/bredcrumb-shape1.png"
+                  alt="breadcrumbImg"
+                  class="img-fluid"
+                />
+                </h1>
+                
+              </div>
+              <ol class="breadcrumb-items">
+                <li>
+                  <a href="index.html" class="font-acl text-white opa-half"
+                    >Home</a
+                  >
+                </li>
+                <li class="text-lemon">></li>
+                <li class="font-acl text-white font-acl">
+                  Team Details
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- team-member-details section Starts  -->
 
       <section
@@ -70,7 +103,7 @@
       >
         <div class="container">
           <div class="row">
-            <div class="col-md-5 team-member-image-col">
+            <div class="col-lg-5 team-member-image-col">
               <div class="team-member-img-wrap">
                 <img
                   src="/assets/images/img/team/team-details-1-1.jpg"
@@ -80,7 +113,7 @@
               </div>
             </div>
 
-            <div class="col-md-6 offset-md-1 team-member-info-col">
+            <div class="col-lg-6 offset-md-1 team-member-info-col">
               <div class="team-member-info-wrap">
                 <h3 class="team-member-name font-acl text-black mb-3">
                   Stephen
@@ -221,6 +254,8 @@
         </div>
       </section>
       <!-- team-details Contact with me section Ends-->
+       <!-- Brand Slider Comp js  -->
+      <section id="brand-slider"></section>
     </main>
     <!-- ! Main content Ends -->
 
@@ -248,6 +283,9 @@
 
     <!-- * back-to-top js component -->
     <script src="assets/components/section-comp/back-to-top.js"></script>
+
+    <!-- * brand-slider js component -->
+    <script src="assets/components/section-comp/brand-slider.js"></script>
 
     <!-- * form block js block -->
     <script src="assets/components/blocks-comp/form.js"></script>

@@ -256,11 +256,11 @@ span {
 }
 .link-btn-black:before {
   background: #000000 !important;
-  height: 1px;
+  height: 2px;
 }
 .link-btn-black:after {
   background: #000000 !important;
-  height: 1px;
+  height: 2px;
 }
 
 .link-btn-grey {

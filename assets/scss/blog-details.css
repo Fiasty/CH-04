@@ -173,23 +173,6 @@ html {
 .blog-details-sec .container .row .blog-details-details .blog-details-tags-share .redirection-col:last-child a i {
   margin-left: 1rem;
 }
-.blog-details-sec .container .row .blog-details-details .form-block {
-  margin-top: 10rem !important;
-}
-.blog-details-sec .container .row .blog-details-details .form-block .section-title {
-  margin: 0;
-}
-.blog-details-sec .container .row .blog-details-details .form-block .section-title h3 {
-  font-size: 3.2rem;
-  padding-bottom: 1rem;
-}
-.blog-details-sec .container .row .blog-details-details .form-block .form p {
-  margin: 0 !important;
-}
-.blog-details-sec .container .row .blog-details-details .form-block .form textarea {
-  margin-top: 0;
-  min-height: 15rem;
-}
 .blog-details-sec .container .row .blog-details-search {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
@@ -300,4 +283,24 @@ html {
   -moz-transition: 0.4s all ease;
   -ms-transition: 0.4s all ease;
   -o-transition: 0.4s all ease;
+}
+
+.form-block {
+  padding-right: 6rem;
+  padding-left: 1.5rem;
+  margin-top: 10rem !important;
+}
+.form-block .section-title {
+  margin: 0;
+}
+.form-block .section-title h3 {
+  font-size: 3.2rem;
+  padding-bottom: 1rem;
+}
+.form-block .form p {
+  margin: 0 !important;
+}
+.form-block .form textarea {
+  margin-top: 0;
+  min-height: 15rem;
 }/*# sourceMappingURL=blog-details.css.map */

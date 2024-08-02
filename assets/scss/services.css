@@ -39,7 +39,7 @@ html {
   opacity: 0;
   z-index: 1;
   transition: 0.4s;
-  margin: 16px 8px 16px 8px;
+  margin: 15px 8px 16px 8px;
 }
 .services-service-sec .service-box-col .wrap img {
   position: absolute;

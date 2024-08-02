@@ -27,7 +27,7 @@ html {
   right: 40px;
   bottom: 40px;
   font-size: 2rem;
-  background: #a8f600;
+  background: #a8f600 !important;
   width: 4rem;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -36,6 +36,14 @@ html {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   z-index: 999;
+  transition: 0.4s all ease-in-out;
+  -webkit-transition: 0.4s all ease-in-out;
+}
+#back-to-top:hover, #back-to-top:focus {
+  background: #000 !important;
+}
+#back-to-top:hover i, #back-to-top:focus i {
+  color: #fff;
 }
 
 #back-to-top:after {

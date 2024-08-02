@@ -44,13 +44,15 @@
     <link rel="stylesheet" href="assets/scss/back-to-top.css" />
     <link rel="stylesheet" href="assets/scss/animation.css" />
     <link rel="stylesheet" href="assets/scss/brand-slider.css" />
+    <link rel="stylesheet" href="assets/scss/breadcrumb.css" />
 
-    <link rel="stylesheet" href="assets/scss/responsive.css" />
     <link rel="stylesheet" href="assets/scss/common.css" />
     <link rel="stylesheet" href="assets/scss/main.css" />
 
     <!-- page Specific css links  -->
     <link rel="stylesheet" href="/assets/scss/portfolio-details.css" />
+    <link rel="stylesheet" href="assets/scss/responsive.css" />
+
   </head>
 
   <body>
@@ -59,6 +61,38 @@
 
     <!-- ! Main content starts -->
     <main>
+      <!-- Breadcrumb section Starts -->
+      <section class="breadcrumb-sec" id="breadcrumb">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 breadcrumb-col">
+              <div class="page-title">
+                <h1 class="title font-acl text-white text-uppercase">
+                  Portfolio Details
+                  <img
+                  src="/assets/images/img/others/bredcrumb-shape1.png"
+                  alt="breadcrumbImg"
+                  class="img-fluid"
+                />
+                </h1>
+                
+              </div>
+              <ol class="breadcrumb-items">
+                <li>
+                  <a href="index.html" class="font-acl text-white opa-half"
+                    >Home</a
+                  >
+                </li>
+                <li class="text-lemon">></li>
+                <li class="font-acl text-white font-acl">
+                  Portfolio Details
+
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
       <section
         class="section-padding bg-white portfolio-details-sec"
         id="portfolio-details"
@@ -184,24 +218,25 @@
               </p>
             </div>
           </div>
-
+<div class="container">
           <div class="row row-redirection">
-            <div class="col-xl-3 col-md-4 col-12 redirection-col">
+            <div class="col-lg-3 col-md-5 col-6 redirection-col">
                 <a href="index.html" class="font-acl text-black text-right">
-                    <i class="fa fa-arrow-left"></i>
+                    <i class="fa fa-arrow-left mx-4"></i>
                     View Pre project
                 </a>
                     
                     <a href="index.html"><img src="/assets/images/img/project/project-details-1-5.jpg" alt=""></a>
             </div>
-            <div class="col-xl-3 col-md-4 col-12 offset-xl-6 offset-md-4 redirection-col">
-                <a href="index.html" class="font-acl text-black text-left">
-                    <i class="fa fa-arrow-right"></i>
+            <div class="col-lg-3 col-md-5 col-6 offset-lg-6 offset-md-2 redirection-col">
+                <a href="index.html" class="font-acl text-black text-left">                    
                     View Pre project
+                    <i class="fa fa-arrow-right mx-4"></i>
                 </a>
                     
                     <a href="index.html"><img src="/assets/images/img/project/project-details-1-6.jpg" alt=""></a>
             </div>
+          </div>
           </div>
         </div>
       </section>

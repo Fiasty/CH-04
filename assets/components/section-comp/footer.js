@@ -25,7 +25,7 @@ fetch('index.html')
 
       <div class="footer-main-comp">
         <div class="row">
-          <div class="col-md-3 col-12 footer-main-comp-cols">
+          <div class="col-lg-3 col-md-6 col-12 footer-main-comp-cols">
             <div class="footer-list-heading">
               <h4 class="font-pop">Location</h4>
               <p class="font-acl">
@@ -35,19 +35,19 @@ fetch('index.html')
               </p>
             </div>
           </div>
-          <div class="col-md-3 col-12 footer-main-comp-cols">
+          <div class="col-lg-3 col-md-6 col-12 footer-main-comp-cols">
             <div class="footer-list-heading">
               <h4 class="font-pop">Start a conversation</h4>
               <a href="mailto:work@vexadesign.com" class="font-acl">work@wexadesign.com</a>
             </div>
           </div>
-          <div class="col-md-3 col-12 footer-main-comp-cols">
+          <div class="col-lg-3 col-md-6 col-12 footer-main-comp-cols">
             <div class="footer-list-heading">
               <h4 class="font-pop">© 2024 Vexa, All rights reserved.</h4>
               <a href="contact.html" class="font-acl footer-a-hover">Privacy Policy</a>
             </div>
           </div>
-          <div class="col-md-3 col-12 footer-main-comp-cols">
+          <div class="col-lg-3 col-md-6 col-12 footer-main-comp-cols">
             <ul class="footer-social-list">
               <li class="footer-social-list-item">
                 <a href="facebook.com" class="font-acl facebook-hover"><i class="fab fa-facebook-f"></i> FACEBOOK <i class="fa-solid fa-arrow-right"></i></a>

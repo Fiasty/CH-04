@@ -9,7 +9,7 @@
     right: 40px;
     bottom: 40px;
     font-size: 2rem;
-    background: $color-lemon;
+    background: $color-lemon !important;
     width: 4rem;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -18,6 +18,16 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     z-index: 999;
+    transition: 0.4s all ease-in-out;
+    -webkit-transition: 0.4s all ease-in-out;
+
+    &:hover,
+    &:focus {
+        background: #000 !important;
+        i {
+            color: #fff;
+        }
+    }
 }
 #back-to-top:after {
     position: absolute;

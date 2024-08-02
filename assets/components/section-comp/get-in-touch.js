@@ -17,7 +17,7 @@ fetch("index.html")
 
         <div class="col-lg-6 col-12 get-in-touch-content-col">
             <div class="row">
-                <div class="col-lg-9 offset-lg-1 col-10 offset-1">
+                <div class="col-lg-10 offset-lg-1 col-sm-10 offset-sm-1 col-12 get-in-touch-heading-wrap">
             <div class="section-title mb-3">
                 <h2 class="title text-uppercase font-acl text-black">Get In touch</h2>
             </div>
