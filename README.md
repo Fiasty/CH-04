@@ -83,12 +83,12 @@ HTML,SCSS,BOOTSTRAP,JS(basic) --- (INTERMEDIATE)
 Hi, I'm Umang Patel. This template showcases a responsive design with dynamic components built using HTML, SCSS, Bootstrap, and JavaScript. It includes features like modular styles and cross-browser compatibility, illustrating practical web development techniques.
 
 
-connect on :
-LinkedIn  - umang-patel-589983320 ;
-Instagram - fiasty1024 ;
-X - Umang1024 ;
-Tubler - fiasty143 ;
-Facebook - Fiasty Codes  ;
+==> connect on :
+LinkedIn  - https://www.linkedin.com/in/umang-patel-589983320/ ;
+Instagram - https://www.instagram.com/fiasty1024/ ;
+X - https://x.com/Umang1024 ;
+Tubler - https://www.tumblr.com/blog/fiasty143 ;
+Facebook - https://www.facebook.com/profile.php?id=61560874233211 ;
 
 ==> see it live in : https://ch-04.vercel.app
 
