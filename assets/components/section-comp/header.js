@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.text())
     .then((htmlContent) => {
       pageHeader.innerHTML = `
-<nav class="navbar navbar-expand-lg bg-black">
+<!-- Desktop nav starts -->
+      <nav class="navbar navbar-expand-lg bg-black">
   <div class="container custom-container">
     <a class="navbar-brand" href="index.html">
       <img src="assets/images/img/logo/logo-white.svg" alt="logoImg" class="logo-white" />
@@ -85,8 +86,9 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
   </div>
 </nav>
+<!-- Desktop nav Ends -->
 
-<!-- Offcanvas Starts -->
+<!--  Offcanvas Starts -->
 <div class="offcanvas-body bg-black p-5" id="offcanvas-body">
   <div class="offcanvas-close-icon">
     <button class="button btn" data-target="offcanvas" data-action="close"><i
