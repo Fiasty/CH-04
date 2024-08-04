@@ -1125,6 +1125,13 @@ html {
     height: 1px !important;
     margin: 1.3px !important;
   }
+  ul.design-demo-btn-group.p-0.d-flex {
+    flex-wrap: wrap;
+  }
+  ul.insight-blogpost-btn-group-ul.p-0.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .home-design-demo-wrap .design-demo-one-half .design-demo-one-half-img-wrap img {
     height: auto;
     margin: 2rem 0;
